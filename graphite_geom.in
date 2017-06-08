@@ -1,0 +1,50 @@
+### Graphite - Optimizing geometry
+
+#Unit grid
+acell      3*7.474425 # In Bohr radii ; scaling for primitive vectors
+                          # @see Cooper, 2012 for initial 1.42 Angstrom spacing used
+angdeg     # Point to two C atoms and z-axis using degrees to form rhombus cell:
+           90  90  60   # http://www.abinit.org/doc/helpfiles/for-v7.8/input_variables/varbas.html#angdeg
+# rprim      1.0 0.0 0.0
+#            -0.5  8.6602540378E-01  0.0
+#            0.0 0.0 1.0
+# brvlatt    0
+kptopt     1
+# chkprim 0
+
+#atom types
+natom      2
+ntypat     1
+typat      1 1
+znucl      6             # Carbon
+xred       0    0    0   # In reduced coordinates
+           2/3  2/3  0  
+# xangst # This keyword indicate that the location of the atoms in ANGSTROM
+# # will follow, one triplet of number for each atom
+# 0.0 0.0 0.0 # Triplet giving the coordinate of atom 1.
+# 0.71 1.22975 0.0 # Triplet giving the coordinate of atom 2.
+
+# iscf       1
+nband 8
+
+#spgaxor    1             # Hexagonal unit cell axes
+
+
+#optimzation
+ecut       4.0           # Max E_kinetic, in Ha
+optcell    1             # Can change volume, keep shape
+ionmov     2             # Movement method
+ecutsm     0.5           # Smoothing of energy curve; 0.5 is recomended
+ntime      20            # take up to n steps to optimize
+dilatmx    1.05          # try plane waves up to this amount larger
+toldfe     1.0d-10       # Delta E_tot tolerance (satisfied twice)
+strprecon  0.1
+
+#k-point grid
+nshiftk    3
+shiftk     0.5 0.0 0.0   # Monkhorst-Pack grid for graphene
+           0.0 0.5 0.0   # Is 6x6x1
+           0.5 0.5 0.0   # @see Monkhorst, 1976 for derivation of concept
+                         # @see Sha, 2002 for 6x6x1 value for graphene
+# Copies k points in each direction n times       
+ngkpt      8 8 1

@@ -1,0 +1,58 @@
+### Modelling single-layer graphite
+# TODO: setup the experiment for single-layer Carbon
+# TODO: setup Carbon pseudopotentials
+
+
+#First run: stabilize the grid
+#Second run: non-self-consistent analysis
+ndtset 2
+
+
+ecut       8.0          # in Ha
+ngkpt      4 4 4
+
+#Unit cell
+acell      3*7.474425   # In Bohr radii
+angdeg     # Point to two C atoms and z-axis using degrees to form rhombus cell:
+           90  90  60   # http://www.abinit.org/doc/helpfiles/for-v7.8/input_variables/varbas.html#angdeg
+         
+#atom types and locations
+natom      2
+ntypat     1
+typat      1 1
+znucl      6             # Carbon
+xred       0    0    1/2 # In reduced coordinates
+           2/3  2/3  1/2  
+
+
+#Dataset 1: usual SCF calculation
+prtden1    1
+# kptopt1    1             # Automatically generate k-points
+# shiftk1    0.5 0.5 0.0   # Recommended for rhombohedral axes. (Shift along z?)
+
+
+nshiftk1    3
+shiftk1     0.5 0.0 0.0   # Monkhorst-Pack grid for graphene
+           0.0 0.5 0.0   # Is 6x6x1
+           0.5 0.5 0.0   # @see Monkhorst, 1976 for derivation of concept
+                         # @see Sha, 2002 for 6x6x1 value for graphene
+
+nstep1     10            # Max SCF cycles
+toldfe1    1.0d-6        # delta(E_total) threshold (after twice) e-6 for rough values, 10 for more detail, 12 is pro
+
+#Dataset 2: Computing band structure
+iscf2      -2            # second run: not selfconsistent
+getden2    -1            # 2nd gets density from 1st
+nband2     8             # 8 bands (6 good, 2 buffer)
+kptopt2    -3            # define 3 segments in Brillouin zone (why?)
+ndivk2     10 12 17      # making a circuit with 3 segments,
+                         # divided by the given number
+kptbounds2 
+           0.5  0.0  0.0  # L
+           0.0  0.0  0.0  # Gamma 
+           0.5  0.5  0.0  # X
+           1.0  1.0  1.0  # Gamma of next cell
+enunit2    1
+tolwfr2    1.0d-10       # Tolerance of <(H-E)^2> allowed for 
+                         # non-self-consistent calculations.
+                         # Good data comes from 1d-12

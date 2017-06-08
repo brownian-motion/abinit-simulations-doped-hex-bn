@@ -1,0 +1,68 @@
+## From https://forum.abinit.org/viewtopic.php?f=8&t=1368
+
+# Crystalline graphene (graphite) 
+#
+# Computation of the band structure.
+# First, a SCF density computation, then a non-SCF band structure calculation.
+
+ndtset 2
+
+#Dataset 1 : usual self-consistent calculation
+kptopt1 1 # Option for the automatic generation of k points,
+# taking into account the symmetry
+iscf1 3
+nshiftk1 1
+shiftk1 0 0 0.0 # These shifts will be the same for all grids
+
+ngkpt1 5 5 1 
+nband1 8
+prtden1 1 # Print the density, for use by dataset 2
+toldfe1 1.0d-8
+
+#Dataset 2 : the band structure
+iscf2 -2
+getden2 -1
+kptopt2 -3
+nband2 8
+ndivk2 20 12 24 # 20, 12 and 24 divisions of the 3 segments, delimited
+# by 4 points.
+kptbounds2 0.0 0.0 0.0 # Gamma point
+0.5 0.5 0.0 # M point
+0.66667 0.33333 0.0 # K point 
+0.0 0.0 0.0 # Gamma point again 
+
+tolwfr2 1.0d-12
+enunit2 1 # Will output the eigenenergies in eV 
+
+
+#Definition of the unit cell
+acell 4.6415 4.6415 24.6415 # in Bohr radii
+rprim 0.8660 -0.5 0 # Graphene (graphite) primitive column vectors scaled acell
+0.8660 0.5 0 
+0 0 1
+
+#Definition of the atom types
+ntypat 1 # There is only one type of atom
+znucl 6 # The keyword "znucl" refers to the atomic number of the 
+# possible type(s) of atom. The pseudopotential(s) 
+# mentioned in the "files" file must correspond
+# to the type(s) of atom. Here, the only type is Carbon
+
+#Definition of the atoms: 2 atoms of type 1, Carbon
+natom 2
+typat 1 1
+xangst # This keyword indicate that the location of the atoms in ANGSTROM
+# will follow, one triplet of number for each atom
+0.0 0.0 0.0 # Triplet giving the coordinate of atom 1.
+0.71 1.22975 0.0 # Triplet giving the coordinate of atom 2.
+
+#Definition of the planewave basis set
+ecut 20.0 # Maximal kinetic energy cut-off, in Hartree
+
+#Definition of the SCF procedure
+nstep 25 # Maximal number of SCF cycles
+diemac 1000000 # Although this is not mandatory, it is worth to
+# precondition the SCF cycle. The model dielectric
+# function used as the standard preconditioner
+# is described in the "dielng" input variable section.
+# Here, we follow the prescription for a metal
