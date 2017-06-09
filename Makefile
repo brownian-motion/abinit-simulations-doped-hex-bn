@@ -8,7 +8,7 @@ endif
 
 PSEUDO_POTENTIALS_DIR=~/abinit/tests/Psps_for_tests
 
-GRAPHITE_PSEUDO=6c.pspnc
+GRAPHITE_PSEUDO=6c_lda.paw
 
 DEFAULT_PSEUDO=$(GRAPHITE_PSEUDO)
 
@@ -24,6 +24,7 @@ band: graphite_band.out graphite_band_out.generic_DS2_band_eigen_energy.json
 %.files:
 	echo $*.in > $@
 	echo $*.out >> $@
+	rm -f *.out*
 	echo $*_in.generic >> $@
 	echo $*_out.generic >> $@
 	echo $*.generic >> $@
@@ -44,4 +45,3 @@ cleanTemp:
 	rm -f *.generic*
 
 cleanAllOut:
-	rm -f *.out*

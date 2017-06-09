@@ -1,7 +1,7 @@
 ### Graphite - Optimizing geometry
 
 #Unit grid
-acell      3*7.474425 # In Bohr radii ; scaling for primitive vectors
+acell      3*5.1053478 # In Bohr radii ; scaling for primitive vectors
                           # @see Cooper, 2012 for initial 1.42 Angstrom spacing used
 angdeg     # Point to two C atoms and z-axis using degrees to form rhombus cell:
            90  90  60   # http://www.abinit.org/doc/helpfiles/for-v7.8/input_variables/varbas.html#angdeg
@@ -31,20 +31,33 @@ nband 8
 
 
 #optimzation
-ecut       4.0           # Max E_kinetic, in Ha
+ecut       4.0           # Max E_kinetic, in Ha (4 Ha ≈ 100 eV)
 optcell    1             # Can change volume, keep shape
 ionmov     2             # Movement method
 ecutsm     0.5           # Smoothing of energy curve; 0.5 is recomended
 ntime      20            # take up to n steps to optimize
 dilatmx    1.05          # try plane waves up to this amount larger
 toldfe     1.0d-10       # Delta E_tot tolerance (satisfied twice)
-strprecon  0.1
+strprecon  0.05          # How much to move each step when optimizing acell
 
 #k-point grid
-nshiftk    3
-shiftk     0.5 0.0 0.0   # Monkhorst-Pack grid for graphene
-           0.0 0.5 0.0   # Is 6x6x1
-           0.5 0.5 0.0   # @see Monkhorst, 1976 for derivation of concept
+# nshiftk    3
+# shiftk     
+                         # Monkhorst-Pack grid for graphene
+                         # Is 6x6x1
+                         # @see Monkhorst, 1976 for derivation of concept
                          # @see Sha, 2002 for 6x6x1 value for graphene
+           # 0.0        0.0        0.0 # Γ
+           # 0.5        0.0        0.0 # M
+           # 0.66666666 0.33333333 0   # K
+           # 0.25       0.0        0.0
+           # 0.33333333 0.17777777 0.0
+           # 0.58333333 0.17777777 0.0
+
+
 # Copies k points in each direction n times       
-ngkpt      8 8 1
+ngkpt      6 6 1         # Generates the Monkhorst-Pack grid
+# kptopt   1             # kptopt = 1 reduces the 1st zone using symmetry
+
+
+chksymbreak 0 # ignore symmetry errors

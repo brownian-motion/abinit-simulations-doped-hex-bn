@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     97920,       2464]
-NotebookOptionsPosition[     96043,       2395]
-NotebookOutlinePosition[     96391,       2410]
-CellTagsIndexPosition[     96348,       2407]
+NotebookDataLength[     29470,        804]
+NotebookOptionsPosition[     26339,        700]
+NotebookOutlinePosition[     26687,        715]
+CellTagsIndexPosition[     26644,        712]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,940 +24,26 @@ Cell[BoxData[
  RowBox[{"kPointInfo", " ", "=", " ", 
   RowBox[{
   "Import", "[", 
-   "\"\<N:\\\\abinit-simulations\\\\graphite\\\\graphite_band_out.generic_DS2_\
+   "\"\<N:\\\\abinit-simulations\\\\graphene\\\\graphite_band_out.generic_DS2_\
 band_eigen_energy.json\>\"", "]"}]}]], "Input",
  CellChangeTimes->{{3.705141138310495*^9, 3.7051412107929945`*^9}, {
    3.705891399937236*^9, 3.705891440681591*^9}, {3.705919390209309*^9, 
-   3.7059194916612616`*^9}, 3.705920575048277*^9}],
+   3.7059194916612616`*^9}, 3.705920575048277*^9, {3.7059777597416563`*^9, 
+   3.7059777599207506`*^9}}],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "11.95828`"}], ",", 
-        RowBox[{"-", "10.38004`"}], ",", 
-        RowBox[{"-", "3.43483`"}], ",", 
-        RowBox[{"-", "1.68577`"}], ",", 
-        RowBox[{"-", "0.7145`"}], ",", "0.63986`", ",", "2.8775`", ",", 
-        "4.25157`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "1"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.5`", ",", "0.`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.03247`"}], ",", 
-        RowBox[{"-", "10.26805`"}], ",", 
-        RowBox[{"-", "3.41614`"}], ",", 
-        RowBox[{"-", "1.66186`"}], ",", 
-        RowBox[{"-", "0.76976`"}], ",", "0.7054`", ",", "2.81694`", ",", 
-        "4.19824`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "2"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.45`", ",", "0.`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.21692`"}], ",", 
-        RowBox[{"-", "10.02701`"}], ",", 
-        RowBox[{"-", "3.41338`"}], ",", 
-        RowBox[{"-", "1.68738`"}], ",", 
-        RowBox[{"-", "0.88039`"}], ",", "0.87266`", ",", "2.752`", ",", 
-        "4.03101`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "3"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.4`", ",", "0.`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.44823`"}], ",", 
-        RowBox[{"-", "9.66783`"}], ",", 
-        RowBox[{"-", "3.33439`"}], ",", 
-        RowBox[{"-", "1.632`"}], ",", 
-        RowBox[{"-", "1.11786`"}], ",", "1.10026`", ",", "2.47724`", ",", 
-        "3.73432`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "4"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.35`", ",", "0.`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.66752`"}], ",", 
-        RowBox[{"-", "9.26219`"}], ",", 
-        RowBox[{"-", "3.19984`"}], ",", 
-        RowBox[{"-", "1.68596`"}], ",", 
-        RowBox[{"-", "1.28307`"}], ",", "1.33755`", ",", "2.18956`", ",", 
-        "3.41161`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "5"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.3`", ",", "0.`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.8742`"}], ",", 
-        RowBox[{"-", "8.84208`"}], ",", 
-        RowBox[{"-", "3.06303`"}], ",", 
-        RowBox[{"-", "1.67606`"}], ",", 
-        RowBox[{"-", "1.4565`"}], ",", "1.57912`", ",", "1.96431`", ",", 
-        "3.06652`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "6"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.25`", ",", "0.`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.05385`"}], ",", 
-        RowBox[{"-", "8.44466`"}], ",", 
-        RowBox[{"-", "2.93412`"}], ",", 
-        RowBox[{"-", "1.85336`"}], ",", 
-        RowBox[{"-", "1.61964`"}], ",", "1.74201`", ",", "1.83354`", ",", 
-        "2.67237`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "7"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.2`", ",", "0.`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.19962`"}], ",", 
-        RowBox[{"-", "8.08073`"}], ",", 
-        RowBox[{"-", "2.83489`"}], ",", 
-        RowBox[{"-", "2.07239`"}], ",", 
-        RowBox[{"-", "1.77359`"}], ",", "1.72666`", ",", "1.88972`", ",", 
-        "2.3486`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.15`", ",", "0.`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.30489`"}], ",", 
-        RowBox[{"-", "7.78943`"}], ",", 
-        RowBox[{"-", "2.71101`"}], ",", 
-        RowBox[{"-", "2.36942`"}], ",", 
-        RowBox[{"-", "1.86909`"}], ",", "1.7475`", ",", "1.99386`", ",", 
-        "2.08086`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "9"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.1`", ",", "0.`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.36918`"}], ",", 
-        RowBox[{"-", "7.58799`"}], ",", 
-        RowBox[{"-", "2.68145`"}], ",", 
-        RowBox[{"-", "2.55119`"}], ",", 
-        RowBox[{"-", "1.92509`"}], ",", "1.80222`", ",", "1.86079`", ",", 
-        "2.06702`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "10"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.05`", ",", "0.`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.39095`"}], ",", 
-        RowBox[{"-", "7.51708`"}], ",", 
-        RowBox[{"-", "2.65223`"}], ",", 
-        RowBox[{"-", "2.65223`"}], ",", 
-        RowBox[{"-", "1.9441`"}], ",", "1.80278`", ",", "1.80278`", ",", 
-        "2.09076`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "11"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.`", ",", "0.`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.3756`"}], ",", 
-        RowBox[{"-", "7.56522`"}], ",", 
-        RowBox[{"-", "2.67264`"}], ",", 
-        RowBox[{"-", "2.56823`"}], ",", 
-        RowBox[{"-", "1.9307`"}], ",", "1.80964`", ",", "1.84321`", ",", 
-        "2.07522`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "12"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.0417`", ",", "0.0417`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.33044`"}], ",", 
-        RowBox[{"-", "7.70573`"}], ",", 
-        RowBox[{"-", "2.67563`"}], ",", 
-        RowBox[{"-", "2.43106`"}], ",", 
-        RowBox[{"-", "1.89133`"}], ",", "1.76933`", ",", "2.01118`", ",", 
-        "2.02593`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "13"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.0833`", ",", "0.0833`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.2578`"}], ",", 
-        RowBox[{"-", "7.93204`"}], ",", 
-        RowBox[{"-", "2.77118`"}], ",", 
-        RowBox[{"-", "2.25272`"}], ",", 
-        RowBox[{"-", "1.82841`"}], ",", "1.73956`", ",", "1.93585`", ",", 
-        "2.20316`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "14"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.125`", ",", "0.125`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.15627`"}], ",", 
-        RowBox[{"-", "8.20093`"}], ",", 
-        RowBox[{"-", "2.88178`"}], ",", 
-        RowBox[{"-", "2.00143`"}], ",", 
-        RowBox[{"-", "1.73617`"}], ",", "1.72382`", ",", "1.83692`", ",", 
-        "2.45093`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "15"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.1667`", ",", "0.1667`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.02653`"}], ",", 
-        RowBox[{"-", "8.51172`"}], ",", 
-        RowBox[{"-", "2.95867`"}], ",", 
-        RowBox[{"-", "1.82343`"}], ",", 
-        RowBox[{"-", "1.59638`"}], ",", "1.70986`", ",", "1.84732`", ",", 
-        "2.72966`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "16"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.2083`", ",", "0.2083`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.8742`"}], ",", 
-        RowBox[{"-", "8.84208`"}], ",", 
-        RowBox[{"-", "3.06303`"}], ",", 
-        RowBox[{"-", "1.67606`"}], ",", 
-        RowBox[{"-", "1.4565`"}], ",", "1.57912`", ",", "1.96431`", ",", 
-        "3.06652`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "17"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.25`", ",", "0.25`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.70414`"}], ",", 
-        RowBox[{"-", "9.19262`"}], ",", 
-        RowBox[{"-", "3.17901`"}], ",", 
-        RowBox[{"-", "1.69711`"}], ",", 
-        RowBox[{"-", "1.31384`"}], ",", "1.37684`", ",", "2.14502`", ",", 
-        "3.35397`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "18"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.2917`", ",", "0.2917`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.52586`"}], ",", 
-        RowBox[{"-", "9.53633`"}], ",", 
-        RowBox[{"-", "3.30018`"}], ",", 
-        RowBox[{"-", "1.6421`"}], ",", 
-        RowBox[{"-", "1.18151`"}], ",", "1.17912`", ",", "2.37725`", ",", 
-        "3.633`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "19"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.3333`", ",", "0.3333`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.32995`"}], ",", 
-        RowBox[{"-", "9.85541`"}], ",", 
-        RowBox[{"-", "3.37667`"}], ",", 
-        RowBox[{"-", "1.6936`"}], ",", 
-        RowBox[{"-", "0.97232`"}], ",", "0.98106`", ",", "2.61367`", ",", 
-        "3.91346`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "20"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.375`", ",", "0.375`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.14628`"}], ",", 
-        RowBox[{"-", "10.11215`"}], ",", 
-        RowBox[{"-", "3.33584`"}], ",", 
-        RowBox[{"-", "1.68406`"}], ",", 
-        RowBox[{"-", "0.8108`"}], ",", "0.92516`", ",", "2.8731`", ",", 
-        "4.09735`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "21"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.4167`", ",", "0.4167`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.00932`"}], ",", 
-        RowBox[{"-", "10.29962`"}], ",", 
-        RowBox[{"-", "3.42165`"}], ",", 
-        RowBox[{"-", "1.66156`"}], ",", 
-        RowBox[{"-", "0.7535`"}], ",", "0.68601`", ",", "2.83991`", ",", 
-        "4.2155`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "22"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.4583`", ",", "0.4583`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "11.95828`"}], ",", 
-        RowBox[{"-", "10.38004`"}], ",", 
-        RowBox[{"-", "3.43483`"}], ",", 
-        RowBox[{"-", "1.68577`"}], ",", 
-        RowBox[{"-", "0.7145`"}], ",", "0.63986`", ",", "2.8775`", ",", 
-        "4.25154`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "23"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.5`", ",", "0.5`", ",", "0.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "11.97427`"}], ",", 
-        RowBox[{"-", "10.33657`"}], ",", 
-        RowBox[{"-", "3.43241`"}], ",", 
-        RowBox[{"-", "1.63272`"}], ",", 
-        RowBox[{"-", "0.7114`"}], ",", "0.60104`", ",", "2.87581`", ",", 
-        "4.24472`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "24"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.5294`", ",", "0.5294`", ",", "0.0588`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.04249`"}], ",", 
-        RowBox[{"-", "10.23023`"}], ",", 
-        RowBox[{"-", "3.43513`"}], ",", 
-        RowBox[{"-", "1.6517`"}], ",", 
-        RowBox[{"-", "0.93705`"}], ",", "0.53074`", ",", "2.85457`", ",", 
-        "4.15406`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "25"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.5588`", ",", "0.5588`", ",", "0.1176`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.12996`"}], ",", 
-        RowBox[{"-", "10.05818`"}], ",", 
-        RowBox[{"-", "3.38724`"}], ",", 
-        RowBox[{"-", "1.62709`"}], ",", 
-        RowBox[{"-", "1.21729`"}], ",", "0.48297`", ",", "2.75436`", ",", 
-        "4.08128`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "26"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.5882`", ",", "0.5882`", ",", "0.1765`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.23886`"}], ",", 
-        RowBox[{"-", "9.85909`"}], ",", 
-        RowBox[{"-", "3.37374`"}], ",", 
-        RowBox[{"-", "1.66549`"}], ",", 
-        RowBox[{"-", "1.55269`"}], ",", "0.42966`", ",", "2.59291`", ",", 
-        "3.92968`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "27"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.6176`", ",", "0.6176`", ",", "0.2353`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.34735`"}], ",", 
-        RowBox[{"-", "9.61276`"}], ",", 
-        RowBox[{"-", "3.27121`"}], ",", 
-        RowBox[{"-", "1.9596`"}], ",", 
-        RowBox[{"-", "1.59697`"}], ",", "0.51177`", ",", "2.54113`", ",", 
-        "3.80179`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "28"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.6471`", ",", "0.6471`", ",", "0.2941`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.45735`"}], ",", 
-        RowBox[{"-", "9.37494`"}], ",", 
-        RowBox[{"-", "3.23902`"}], ",", 
-        RowBox[{"-", "2.26502`"}], ",", 
-        RowBox[{"-", "1.6125`"}], ",", "0.47224`", ",", "2.38239`", ",", 
-        "3.65538`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "29"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.6765`", ",", "0.6765`", ",", "0.3529`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.56828`"}], ",", 
-        RowBox[{"-", "9.11229`"}], ",", 
-        RowBox[{"-", "3.12552`"}], ",", 
-        RowBox[{"-", "2.54579`"}], ",", 
-        RowBox[{"-", "1.57529`"}], ",", "0.59303`", ",", "2.30823`", ",", 
-        "3.50428`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "30"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.7059`", ",", "0.7059`", ",", "0.4118`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.67539`"}], ",", 
-        RowBox[{"-", "8.8795`"}], ",", 
-        RowBox[{"-", "3.0361`"}], ",", 
-        RowBox[{"-", "2.7197`"}], ",", 
-        RowBox[{"-", "1.62067`"}], ",", "0.66309`", ",", "2.20733`", ",", 
-        "3.31016`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "31"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.7353`", ",", "0.7353`", ",", "0.4706`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.78526`"}], ",", 
-        RowBox[{"-", "8.63827`"}], ",", 
-        RowBox[{"-", "2.95321`"}], ",", 
-        RowBox[{"-", "2.83381`"}], ",", 
-        RowBox[{"-", "1.71047`"}], ",", "0.80813`", ",", "2.12236`", ",", 
-        "3.10465`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "32"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.7647`", ",", "0.7647`", ",", "0.5294`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "12.89093`"}], ",", 
-        RowBox[{"-", "8.41165`"}], ",", 
-        RowBox[{"-", "2.84523`"}], ",", 
-        RowBox[{"-", "2.82316`"}], ",", 
-        RowBox[{"-", "1.81613`"}], ",", "1.0473`", ",", "2.03795`", ",", 
-        "2.96136`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "33"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.7941`", ",", "0.7941`", ",", "0.5882`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.00555`"}], ",", 
-        RowBox[{"-", "8.19579`"}], ",", 
-        RowBox[{"-", "2.82956`"}], ",", 
-        RowBox[{"-", "2.77784`"}], ",", 
-        RowBox[{"-", "1.94955`"}], ",", "1.3506`", ",", "1.99729`", ",", 
-        "2.66627`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "34"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.8235`", ",", "0.8235`", ",", "0.6471`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.11044`"}], ",", 
-        RowBox[{"-", "7.99398`"}], ",", 
-        RowBox[{"-", "2.73053`"}], ",", 
-        RowBox[{"-", "2.69298`"}], ",", 
-        RowBox[{"-", "2.06499`"}], ",", "1.62894`", ",", "1.91242`", ",", 
-        "2.44143`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "35"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.8529`", ",", "0.8529`", ",", "0.7059`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.19702`"}], ",", 
-        RowBox[{"-", "7.82276`"}], ",", 
-        RowBox[{"-", "2.64955`"}], ",", 
-        RowBox[{"-", "2.52689`"}], ",", 
-        RowBox[{"-", "2.18806`"}], ",", "1.89057`", ",", "1.91932`", ",", 
-        "2.24293`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "36"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.8824`", ",", "0.8824`", ",", "0.7647`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.27901`"}], ",", 
-        RowBox[{"-", "7.69045`"}], ",", 
-        RowBox[{"-", "2.65034`"}], ",", 
-        RowBox[{"-", "2.3478`"}], ",", 
-        RowBox[{"-", "2.34183`"}], ",", "1.85963`", ",", "1.98054`", ",", 
-        "2.04823`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "37"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.9118`", ",", "0.9118`", ",", "0.8235`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.34105`"}], ",", 
-        RowBox[{"-", "7.60086`"}], ",", 
-        RowBox[{"-", "2.64855`"}], ",", 
-        RowBox[{"-", "2.50416`"}], ",", 
-        RowBox[{"-", "2.16355`"}], ",", "1.82011`", ",", "1.923`", ",", 
-        "1.99767`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "38"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.9412`", ",", "0.9412`", ",", "0.8824`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.37829`"}], ",", 
-        RowBox[{"-", "7.53877`"}], ",", 
-        RowBox[{"-", "2.65887`"}], ",", 
-        RowBox[{"-", "2.60526`"}], ",", 
-        RowBox[{"-", "2.00404`"}], ",", "1.81009`", ",", "1.82774`", ",", 
-        "2.06721`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "39"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"0.9706`", ",", "0.9706`", ",", "0.9412`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"band_energies\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "13.39095`"}], ",", 
-        RowBox[{"-", "7.51708`"}], ",", 
-        RowBox[{"-", "2.65223`"}], ",", 
-        RowBox[{"-", "2.65223`"}], ",", 
-        RowBox[{"-", "1.9441`"}], ",", "1.80278`", ",", "1.80278`", ",", 
-        "2.09076`"}], "}"}]}], ",", 
-     RowBox[{"\<\"nband\"\>", "\[Rule]", "8"}], ",", 
-     RowBox[{"\<\"energy_unit\"\>", "\[Rule]", "\<\"eV\"\>"}], ",", 
-     RowBox[{"\<\"number\"\>", "\[Rule]", "40"}], ",", 
-     RowBox[{"\<\"wtk\"\>", "\[Rule]", "1.`"}], ",", 
-     RowBox[{"\<\"coord\"\>", "\[Rule]", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"\<\"coordinate_array\"\>", "\[Rule]", 
-         RowBox[{"{", 
-          RowBox[{"1.`", ",", "1.`", ",", "1.`"}], "}"}]}], ",", 
-        RowBox[{"\<\"coordinate_system\"\>", 
-         "\[Rule]", "\<\"reduced coord\"\>"}]}], "}"}]}]}], "}"}]}], 
-  "}"}]], "Output",
+ TemplateBox[{
+  "Import","nffil",
+   "\"File not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"",2,5,13,
+   19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7059777356311407`*^9}],
+
+Cell[BoxData["$Failed"], "Output",
  CellChangeTimes->{
   3.7051412146034555`*^9, 3.7058914438428397`*^9, {3.7059193942812567`*^9, 
    3.70591941472849*^9}, {3.705919477199814*^9, 3.70591950604696*^9}, 
-   3.7059199309706106`*^9, 3.7059200342988515`*^9}]
+   3.7059199309706106`*^9, 3.7059200342988515`*^9, 3.7059777356531706`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -970,330 +56,18 @@ Cell[BoxData[
   3.7059197868784213`*^9, 3.705919808196407*^9}}],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "11.95828`"}], ",", 
-     RowBox[{"-", "10.38004`"}], ",", 
-     RowBox[{"-", "3.43483`"}], ",", 
-     RowBox[{"-", "1.68577`"}], ",", 
-     RowBox[{"-", "0.7145`"}], ",", "0.63986`", ",", "2.8775`", ",", 
-     "4.25157`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.03247`"}], ",", 
-     RowBox[{"-", "10.26805`"}], ",", 
-     RowBox[{"-", "3.41614`"}], ",", 
-     RowBox[{"-", "1.66186`"}], ",", 
-     RowBox[{"-", "0.76976`"}], ",", "0.7054`", ",", "2.81694`", ",", 
-     "4.19824`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.21692`"}], ",", 
-     RowBox[{"-", "10.02701`"}], ",", 
-     RowBox[{"-", "3.41338`"}], ",", 
-     RowBox[{"-", "1.68738`"}], ",", 
-     RowBox[{"-", "0.88039`"}], ",", "0.87266`", ",", "2.752`", ",", 
-     "4.03101`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.44823`"}], ",", 
-     RowBox[{"-", "9.66783`"}], ",", 
-     RowBox[{"-", "3.33439`"}], ",", 
-     RowBox[{"-", "1.632`"}], ",", 
-     RowBox[{"-", "1.11786`"}], ",", "1.10026`", ",", "2.47724`", ",", 
-     "3.73432`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.66752`"}], ",", 
-     RowBox[{"-", "9.26219`"}], ",", 
-     RowBox[{"-", "3.19984`"}], ",", 
-     RowBox[{"-", "1.68596`"}], ",", 
-     RowBox[{"-", "1.28307`"}], ",", "1.33755`", ",", "2.18956`", ",", 
-     "3.41161`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.8742`"}], ",", 
-     RowBox[{"-", "8.84208`"}], ",", 
-     RowBox[{"-", "3.06303`"}], ",", 
-     RowBox[{"-", "1.67606`"}], ",", 
-     RowBox[{"-", "1.4565`"}], ",", "1.57912`", ",", "1.96431`", ",", 
-     "3.06652`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.05385`"}], ",", 
-     RowBox[{"-", "8.44466`"}], ",", 
-     RowBox[{"-", "2.93412`"}], ",", 
-     RowBox[{"-", "1.85336`"}], ",", 
-     RowBox[{"-", "1.61964`"}], ",", "1.74201`", ",", "1.83354`", ",", 
-     "2.67237`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.19962`"}], ",", 
-     RowBox[{"-", "8.08073`"}], ",", 
-     RowBox[{"-", "2.83489`"}], ",", 
-     RowBox[{"-", "2.07239`"}], ",", 
-     RowBox[{"-", "1.77359`"}], ",", "1.72666`", ",", "1.88972`", ",", 
-     "2.3486`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.30489`"}], ",", 
-     RowBox[{"-", "7.78943`"}], ",", 
-     RowBox[{"-", "2.71101`"}], ",", 
-     RowBox[{"-", "2.36942`"}], ",", 
-     RowBox[{"-", "1.86909`"}], ",", "1.7475`", ",", "1.99386`", ",", 
-     "2.08086`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.36918`"}], ",", 
-     RowBox[{"-", "7.58799`"}], ",", 
-     RowBox[{"-", "2.68145`"}], ",", 
-     RowBox[{"-", "2.55119`"}], ",", 
-     RowBox[{"-", "1.92509`"}], ",", "1.80222`", ",", "1.86079`", ",", 
-     "2.06702`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.39095`"}], ",", 
-     RowBox[{"-", "7.51708`"}], ",", 
-     RowBox[{"-", "2.65223`"}], ",", 
-     RowBox[{"-", "2.65223`"}], ",", 
-     RowBox[{"-", "1.9441`"}], ",", "1.80278`", ",", "1.80278`", ",", 
-     "2.09076`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.3756`"}], ",", 
-     RowBox[{"-", "7.56522`"}], ",", 
-     RowBox[{"-", "2.67264`"}], ",", 
-     RowBox[{"-", "2.56823`"}], ",", 
-     RowBox[{"-", "1.9307`"}], ",", "1.80964`", ",", "1.84321`", ",", 
-     "2.07522`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.33044`"}], ",", 
-     RowBox[{"-", "7.70573`"}], ",", 
-     RowBox[{"-", "2.67563`"}], ",", 
-     RowBox[{"-", "2.43106`"}], ",", 
-     RowBox[{"-", "1.89133`"}], ",", "1.76933`", ",", "2.01118`", ",", 
-     "2.02593`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.2578`"}], ",", 
-     RowBox[{"-", "7.93204`"}], ",", 
-     RowBox[{"-", "2.77118`"}], ",", 
-     RowBox[{"-", "2.25272`"}], ",", 
-     RowBox[{"-", "1.82841`"}], ",", "1.73956`", ",", "1.93585`", ",", 
-     "2.20316`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.15627`"}], ",", 
-     RowBox[{"-", "8.20093`"}], ",", 
-     RowBox[{"-", "2.88178`"}], ",", 
-     RowBox[{"-", "2.00143`"}], ",", 
-     RowBox[{"-", "1.73617`"}], ",", "1.72382`", ",", "1.83692`", ",", 
-     "2.45093`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.02653`"}], ",", 
-     RowBox[{"-", "8.51172`"}], ",", 
-     RowBox[{"-", "2.95867`"}], ",", 
-     RowBox[{"-", "1.82343`"}], ",", 
-     RowBox[{"-", "1.59638`"}], ",", "1.70986`", ",", "1.84732`", ",", 
-     "2.72966`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.8742`"}], ",", 
-     RowBox[{"-", "8.84208`"}], ",", 
-     RowBox[{"-", "3.06303`"}], ",", 
-     RowBox[{"-", "1.67606`"}], ",", 
-     RowBox[{"-", "1.4565`"}], ",", "1.57912`", ",", "1.96431`", ",", 
-     "3.06652`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.70414`"}], ",", 
-     RowBox[{"-", "9.19262`"}], ",", 
-     RowBox[{"-", "3.17901`"}], ",", 
-     RowBox[{"-", "1.69711`"}], ",", 
-     RowBox[{"-", "1.31384`"}], ",", "1.37684`", ",", "2.14502`", ",", 
-     "3.35397`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.52586`"}], ",", 
-     RowBox[{"-", "9.53633`"}], ",", 
-     RowBox[{"-", "3.30018`"}], ",", 
-     RowBox[{"-", "1.6421`"}], ",", 
-     RowBox[{"-", "1.18151`"}], ",", "1.17912`", ",", "2.37725`", ",", 
-     "3.633`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.32995`"}], ",", 
-     RowBox[{"-", "9.85541`"}], ",", 
-     RowBox[{"-", "3.37667`"}], ",", 
-     RowBox[{"-", "1.6936`"}], ",", 
-     RowBox[{"-", "0.97232`"}], ",", "0.98106`", ",", "2.61367`", ",", 
-     "3.91346`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.14628`"}], ",", 
-     RowBox[{"-", "10.11215`"}], ",", 
-     RowBox[{"-", "3.33584`"}], ",", 
-     RowBox[{"-", "1.68406`"}], ",", 
-     RowBox[{"-", "0.8108`"}], ",", "0.92516`", ",", "2.8731`", ",", 
-     "4.09735`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.00932`"}], ",", 
-     RowBox[{"-", "10.29962`"}], ",", 
-     RowBox[{"-", "3.42165`"}], ",", 
-     RowBox[{"-", "1.66156`"}], ",", 
-     RowBox[{"-", "0.7535`"}], ",", "0.68601`", ",", "2.83991`", ",", 
-     "4.2155`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "11.95828`"}], ",", 
-     RowBox[{"-", "10.38004`"}], ",", 
-     RowBox[{"-", "3.43483`"}], ",", 
-     RowBox[{"-", "1.68577`"}], ",", 
-     RowBox[{"-", "0.7145`"}], ",", "0.63986`", ",", "2.8775`", ",", 
-     "4.25154`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "11.97427`"}], ",", 
-     RowBox[{"-", "10.33657`"}], ",", 
-     RowBox[{"-", "3.43241`"}], ",", 
-     RowBox[{"-", "1.63272`"}], ",", 
-     RowBox[{"-", "0.7114`"}], ",", "0.60104`", ",", "2.87581`", ",", 
-     "4.24472`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.04249`"}], ",", 
-     RowBox[{"-", "10.23023`"}], ",", 
-     RowBox[{"-", "3.43513`"}], ",", 
-     RowBox[{"-", "1.6517`"}], ",", 
-     RowBox[{"-", "0.93705`"}], ",", "0.53074`", ",", "2.85457`", ",", 
-     "4.15406`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.12996`"}], ",", 
-     RowBox[{"-", "10.05818`"}], ",", 
-     RowBox[{"-", "3.38724`"}], ",", 
-     RowBox[{"-", "1.62709`"}], ",", 
-     RowBox[{"-", "1.21729`"}], ",", "0.48297`", ",", "2.75436`", ",", 
-     "4.08128`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.23886`"}], ",", 
-     RowBox[{"-", "9.85909`"}], ",", 
-     RowBox[{"-", "3.37374`"}], ",", 
-     RowBox[{"-", "1.66549`"}], ",", 
-     RowBox[{"-", "1.55269`"}], ",", "0.42966`", ",", "2.59291`", ",", 
-     "3.92968`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.34735`"}], ",", 
-     RowBox[{"-", "9.61276`"}], ",", 
-     RowBox[{"-", "3.27121`"}], ",", 
-     RowBox[{"-", "1.9596`"}], ",", 
-     RowBox[{"-", "1.59697`"}], ",", "0.51177`", ",", "2.54113`", ",", 
-     "3.80179`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.45735`"}], ",", 
-     RowBox[{"-", "9.37494`"}], ",", 
-     RowBox[{"-", "3.23902`"}], ",", 
-     RowBox[{"-", "2.26502`"}], ",", 
-     RowBox[{"-", "1.6125`"}], ",", "0.47224`", ",", "2.38239`", ",", 
-     "3.65538`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.56828`"}], ",", 
-     RowBox[{"-", "9.11229`"}], ",", 
-     RowBox[{"-", "3.12552`"}], ",", 
-     RowBox[{"-", "2.54579`"}], ",", 
-     RowBox[{"-", "1.57529`"}], ",", "0.59303`", ",", "2.30823`", ",", 
-     "3.50428`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.67539`"}], ",", 
-     RowBox[{"-", "8.8795`"}], ",", 
-     RowBox[{"-", "3.0361`"}], ",", 
-     RowBox[{"-", "2.7197`"}], ",", 
-     RowBox[{"-", "1.62067`"}], ",", "0.66309`", ",", "2.20733`", ",", 
-     "3.31016`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.78526`"}], ",", 
-     RowBox[{"-", "8.63827`"}], ",", 
-     RowBox[{"-", "2.95321`"}], ",", 
-     RowBox[{"-", "2.83381`"}], ",", 
-     RowBox[{"-", "1.71047`"}], ",", "0.80813`", ",", "2.12236`", ",", 
-     "3.10465`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.89093`"}], ",", 
-     RowBox[{"-", "8.41165`"}], ",", 
-     RowBox[{"-", "2.84523`"}], ",", 
-     RowBox[{"-", "2.82316`"}], ",", 
-     RowBox[{"-", "1.81613`"}], ",", "1.0473`", ",", "2.03795`", ",", 
-     "2.96136`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.00555`"}], ",", 
-     RowBox[{"-", "8.19579`"}], ",", 
-     RowBox[{"-", "2.82956`"}], ",", 
-     RowBox[{"-", "2.77784`"}], ",", 
-     RowBox[{"-", "1.94955`"}], ",", "1.3506`", ",", "1.99729`", ",", 
-     "2.66627`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.11044`"}], ",", 
-     RowBox[{"-", "7.99398`"}], ",", 
-     RowBox[{"-", "2.73053`"}], ",", 
-     RowBox[{"-", "2.69298`"}], ",", 
-     RowBox[{"-", "2.06499`"}], ",", "1.62894`", ",", "1.91242`", ",", 
-     "2.44143`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.19702`"}], ",", 
-     RowBox[{"-", "7.82276`"}], ",", 
-     RowBox[{"-", "2.64955`"}], ",", 
-     RowBox[{"-", "2.52689`"}], ",", 
-     RowBox[{"-", "2.18806`"}], ",", "1.89057`", ",", "1.91932`", ",", 
-     "2.24293`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.27901`"}], ",", 
-     RowBox[{"-", "7.69045`"}], ",", 
-     RowBox[{"-", "2.65034`"}], ",", 
-     RowBox[{"-", "2.3478`"}], ",", 
-     RowBox[{"-", "2.34183`"}], ",", "1.85963`", ",", "1.98054`", ",", 
-     "2.04823`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.34105`"}], ",", 
-     RowBox[{"-", "7.60086`"}], ",", 
-     RowBox[{"-", "2.64855`"}], ",", 
-     RowBox[{"-", "2.50416`"}], ",", 
-     RowBox[{"-", "2.16355`"}], ",", "1.82011`", ",", "1.923`", ",", 
-     "1.99767`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.37829`"}], ",", 
-     RowBox[{"-", "7.53877`"}], ",", 
-     RowBox[{"-", "2.65887`"}], ",", 
-     RowBox[{"-", "2.60526`"}], ",", 
-     RowBox[{"-", "2.00404`"}], ",", "1.81009`", ",", "1.82774`", ",", 
-     "2.06721`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.39095`"}], ",", 
-     RowBox[{"-", "7.51708`"}], ",", 
-     RowBox[{"-", "2.65223`"}], ",", 
-     RowBox[{"-", "2.65223`"}], ",", 
-     RowBox[{"-", "1.9441`"}], ",", "1.80278`", ",", "1.80278`", ",", 
-     "2.09076`"}], "}"}]}], "}"}]], "Output",
+ TemplateBox[{
+  "Lookup","invrl",
+   "\"The argument \\!\\(\\*RowBox[{\\\"$Failed\\\"}]\\) is not a valid \
+Association or a list of rules.\"",2,6,14,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7059777356861973`*^9}],
+
+Cell[BoxData[
+ RowBox[{"Lookup", "[", 
+  RowBox[{"kPointInfo", ",", "\<\"band_energies\"\>"}], "]"}]], "Output",
  CellChangeTimes->{{3.70591980299472*^9, 3.7059198086687603`*^9}, 
-   3.7059200682558355`*^9}]
+   3.7059200682558355`*^9, 3.7059777357076993`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1308,99 +82,24 @@ Cell[BoxData[
   3.7059198207092805`*^9}}],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "11.95828`"}], ",", 
-     RowBox[{"-", "10.38004`"}], ",", 
-     RowBox[{"-", "3.43483`"}], ",", 
-     RowBox[{"-", "1.68577`"}], ",", 
-     RowBox[{"-", "0.7145`"}], ",", "0.63986`", ",", "2.8775`", ",", 
-     "4.25157`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.03247`"}], ",", 
-     RowBox[{"-", "10.26805`"}], ",", 
-     RowBox[{"-", "3.41614`"}], ",", 
-     RowBox[{"-", "1.66186`"}], ",", 
-     RowBox[{"-", "0.76976`"}], ",", "0.7054`", ",", "2.81694`", ",", 
-     "4.19824`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.21692`"}], ",", 
-     RowBox[{"-", "10.02701`"}], ",", 
-     RowBox[{"-", "3.41338`"}], ",", 
-     RowBox[{"-", "1.68738`"}], ",", 
-     RowBox[{"-", "0.88039`"}], ",", "0.87266`", ",", "2.752`", ",", 
-     "4.03101`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.44823`"}], ",", 
-     RowBox[{"-", "9.66783`"}], ",", 
-     RowBox[{"-", "3.33439`"}], ",", 
-     RowBox[{"-", "1.632`"}], ",", 
-     RowBox[{"-", "1.11786`"}], ",", "1.10026`", ",", "2.47724`", ",", 
-     "3.73432`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.66752`"}], ",", 
-     RowBox[{"-", "9.26219`"}], ",", 
-     RowBox[{"-", "3.19984`"}], ",", 
-     RowBox[{"-", "1.68596`"}], ",", 
-     RowBox[{"-", "1.28307`"}], ",", "1.33755`", ",", "2.18956`", ",", 
-     "3.41161`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.8742`"}], ",", 
-     RowBox[{"-", "8.84208`"}], ",", 
-     RowBox[{"-", "3.06303`"}], ",", 
-     RowBox[{"-", "1.67606`"}], ",", 
-     RowBox[{"-", "1.4565`"}], ",", "1.57912`", ",", "1.96431`", ",", 
-     "3.06652`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.05385`"}], ",", 
-     RowBox[{"-", "8.44466`"}], ",", 
-     RowBox[{"-", "2.93412`"}], ",", 
-     RowBox[{"-", "1.85336`"}], ",", 
-     RowBox[{"-", "1.61964`"}], ",", "1.74201`", ",", "1.83354`", ",", 
-     "2.67237`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.19962`"}], ",", 
-     RowBox[{"-", "8.08073`"}], ",", 
-     RowBox[{"-", "2.83489`"}], ",", 
-     RowBox[{"-", "2.07239`"}], ",", 
-     RowBox[{"-", "1.77359`"}], ",", "1.72666`", ",", "1.88972`", ",", 
-     "2.3486`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.30489`"}], ",", 
-     RowBox[{"-", "7.78943`"}], ",", 
-     RowBox[{"-", "2.71101`"}], ",", 
-     RowBox[{"-", "2.36942`"}], ",", 
-     RowBox[{"-", "1.86909`"}], ",", "1.7475`", ",", "1.99386`", ",", 
-     "2.08086`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.36918`"}], ",", 
-     RowBox[{"-", "7.58799`"}], ",", 
-     RowBox[{"-", "2.68145`"}], ",", 
-     RowBox[{"-", "2.55119`"}], ",", 
-     RowBox[{"-", "1.92509`"}], ",", "1.80222`", ",", "1.86079`", ",", 
-     "2.06702`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.39095`"}], ",", 
-     RowBox[{"-", "7.51708`"}], ",", 
-     RowBox[{"-", "2.65223`"}], ",", 
-     RowBox[{"-", "2.65223`"}], ",", 
-     RowBox[{"-", "1.9441`"}], ",", "1.80278`", ",", "1.80278`", ",", 
-     "2.09076`"}], "}"}]}], "}"}]], "Output",
+ TemplateBox[{
+  "Part","take",
+   "\"Cannot take positions \\!\\(\\*RowBox[{\\\"1\\\"}]\\) through \
+\\!\\(\\*RowBox[{\\\"11\\\"}]\\) in \\!\\(\\*RowBox[{\\\"Lookup\\\", \
+\\\"[\\\", RowBox[{\\\"kPointInfo\\\", \\\",\\\", \\\"\\\\\\\"band_energies\\\
+\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,7,15,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7059777357251587`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Lookup", "[", 
+   RowBox[{"kPointInfo", ",", "\<\"band_energies\"\>"}], "]"}], 
+  "\[LeftDoubleBracket]", 
+  RowBox[{"1", ";;", "11"}], "\[RightDoubleBracket]"}]], "Output",
  CellChangeTimes->{{3.7058915277117205`*^9, 3.7058915661310244`*^9}, {
    3.7058916506389513`*^9, 3.705891657433236*^9}, 3.70589171948477*^9, 
-   3.7059198245820265`*^9}]
+   3.7059198245820265`*^9, 3.7059777357451706`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1414,91 +113,26 @@ Cell[BoxData[
    3.7058916662572055`*^9, 3.705891675018323*^9}, 3.705891730258588*^9}],
 
 Cell[BoxData[
- RowBox[{"{", 
+ TemplateBox[{
+  "Part","take",
+   "\"Cannot take positions \\!\\(\\*RowBox[{\\\"1\\\"}]\\) through \
+\\!\\(\\*RowBox[{\\\"11\\\"}]\\) in \\!\\(\\*RowBox[{\\\"Lookup\\\", \
+\\\"[\\\", RowBox[{\\\"kPointInfo\\\", \\\",\\\", \\\"\\\\\\\"band_energies\\\
+\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,8,16,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.705977735754179*^9}],
+
+Cell[BoxData[
+ RowBox[{"Transpose", "[", 
   RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "11.95828`"}], ",", 
-     RowBox[{"-", "12.03247`"}], ",", 
-     RowBox[{"-", "12.21692`"}], ",", 
-     RowBox[{"-", "12.44823`"}], ",", 
-     RowBox[{"-", "12.66752`"}], ",", 
-     RowBox[{"-", "12.8742`"}], ",", 
-     RowBox[{"-", "13.05385`"}], ",", 
-     RowBox[{"-", "13.19962`"}], ",", 
-     RowBox[{"-", "13.30489`"}], ",", 
-     RowBox[{"-", "13.36918`"}], ",", 
-     RowBox[{"-", "13.39095`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "10.38004`"}], ",", 
-     RowBox[{"-", "10.26805`"}], ",", 
-     RowBox[{"-", "10.02701`"}], ",", 
-     RowBox[{"-", "9.66783`"}], ",", 
-     RowBox[{"-", "9.26219`"}], ",", 
-     RowBox[{"-", "8.84208`"}], ",", 
-     RowBox[{"-", "8.44466`"}], ",", 
-     RowBox[{"-", "8.08073`"}], ",", 
-     RowBox[{"-", "7.78943`"}], ",", 
-     RowBox[{"-", "7.58799`"}], ",", 
-     RowBox[{"-", "7.51708`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "3.43483`"}], ",", 
-     RowBox[{"-", "3.41614`"}], ",", 
-     RowBox[{"-", "3.41338`"}], ",", 
-     RowBox[{"-", "3.33439`"}], ",", 
-     RowBox[{"-", "3.19984`"}], ",", 
-     RowBox[{"-", "3.06303`"}], ",", 
-     RowBox[{"-", "2.93412`"}], ",", 
-     RowBox[{"-", "2.83489`"}], ",", 
-     RowBox[{"-", "2.71101`"}], ",", 
-     RowBox[{"-", "2.68145`"}], ",", 
-     RowBox[{"-", "2.65223`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "1.68577`"}], ",", 
-     RowBox[{"-", "1.66186`"}], ",", 
-     RowBox[{"-", "1.68738`"}], ",", 
-     RowBox[{"-", "1.632`"}], ",", 
-     RowBox[{"-", "1.68596`"}], ",", 
-     RowBox[{"-", "1.67606`"}], ",", 
-     RowBox[{"-", "1.85336`"}], ",", 
-     RowBox[{"-", "2.07239`"}], ",", 
-     RowBox[{"-", "2.36942`"}], ",", 
-     RowBox[{"-", "2.55119`"}], ",", 
-     RowBox[{"-", "2.65223`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "0.7145`"}], ",", 
-     RowBox[{"-", "0.76976`"}], ",", 
-     RowBox[{"-", "0.88039`"}], ",", 
-     RowBox[{"-", "1.11786`"}], ",", 
-     RowBox[{"-", "1.28307`"}], ",", 
-     RowBox[{"-", "1.4565`"}], ",", 
-     RowBox[{"-", "1.61964`"}], ",", 
-     RowBox[{"-", "1.77359`"}], ",", 
-     RowBox[{"-", "1.86909`"}], ",", 
-     RowBox[{"-", "1.92509`"}], ",", 
-     RowBox[{"-", "1.9441`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "0.63986`", ",", "0.7054`", ",", "0.87266`", ",", "1.10026`", ",", 
-     "1.33755`", ",", "1.57912`", ",", "1.74201`", ",", "1.72666`", ",", 
-     "1.7475`", ",", "1.80222`", ",", "1.80278`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "2.8775`", ",", "2.81694`", ",", "2.752`", ",", "2.47724`", ",", 
-     "2.18956`", ",", "1.96431`", ",", "1.83354`", ",", "1.88972`", ",", 
-     "1.99386`", ",", "1.86079`", ",", "1.80278`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "4.25157`", ",", "4.19824`", ",", "4.03101`", ",", "3.73432`", ",", 
-     "3.41161`", ",", "3.06652`", ",", "2.67237`", ",", "2.3486`", ",", 
-     "2.08086`", ",", "2.06702`", ",", "2.09076`"}], "}"}]}], "}"}]], "Output",
+   RowBox[{"Lookup", "[", 
+    RowBox[{"kPointInfo", ",", "\<\"band_energies\"\>"}], "]"}], 
+   "\[LeftDoubleBracket]", 
+   RowBox[{"1", ";;", "11"}], "\[RightDoubleBracket]"}], "]"}]], "Output",
  CellChangeTimes->{{3.705141322919013*^9, 3.705141342266875*^9}, 
    3.7051418698195667`*^9, 3.7058915122631817`*^9, {3.705891671215648*^9, 
-   3.7058916759369707`*^9}, 3.7058917314475107`*^9, 3.7059198266855307`*^9}]
+   3.7058916759369707`*^9}, 3.7058917314475107`*^9, 3.7059198266855307`*^9, 
+   3.7059777357751913`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1512,114 +146,23 @@ Cell[BoxData[
   3.705919832002054*^9, 3.705919836753434*^9}}],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.39095`"}], ",", 
-     RowBox[{"-", "7.51708`"}], ",", 
-     RowBox[{"-", "2.65223`"}], ",", 
-     RowBox[{"-", "2.65223`"}], ",", 
-     RowBox[{"-", "1.9441`"}], ",", "1.80278`", ",", "1.80278`", ",", 
-     "2.09076`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.3756`"}], ",", 
-     RowBox[{"-", "7.56522`"}], ",", 
-     RowBox[{"-", "2.67264`"}], ",", 
-     RowBox[{"-", "2.56823`"}], ",", 
-     RowBox[{"-", "1.9307`"}], ",", "1.80964`", ",", "1.84321`", ",", 
-     "2.07522`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.33044`"}], ",", 
-     RowBox[{"-", "7.70573`"}], ",", 
-     RowBox[{"-", "2.67563`"}], ",", 
-     RowBox[{"-", "2.43106`"}], ",", 
-     RowBox[{"-", "1.89133`"}], ",", "1.76933`", ",", "2.01118`", ",", 
-     "2.02593`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.2578`"}], ",", 
-     RowBox[{"-", "7.93204`"}], ",", 
-     RowBox[{"-", "2.77118`"}], ",", 
-     RowBox[{"-", "2.25272`"}], ",", 
-     RowBox[{"-", "1.82841`"}], ",", "1.73956`", ",", "1.93585`", ",", 
-     "2.20316`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.15627`"}], ",", 
-     RowBox[{"-", "8.20093`"}], ",", 
-     RowBox[{"-", "2.88178`"}], ",", 
-     RowBox[{"-", "2.00143`"}], ",", 
-     RowBox[{"-", "1.73617`"}], ",", "1.72382`", ",", "1.83692`", ",", 
-     "2.45093`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.02653`"}], ",", 
-     RowBox[{"-", "8.51172`"}], ",", 
-     RowBox[{"-", "2.95867`"}], ",", 
-     RowBox[{"-", "1.82343`"}], ",", 
-     RowBox[{"-", "1.59638`"}], ",", "1.70986`", ",", "1.84732`", ",", 
-     "2.72966`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.8742`"}], ",", 
-     RowBox[{"-", "8.84208`"}], ",", 
-     RowBox[{"-", "3.06303`"}], ",", 
-     RowBox[{"-", "1.67606`"}], ",", 
-     RowBox[{"-", "1.4565`"}], ",", "1.57912`", ",", "1.96431`", ",", 
-     "3.06652`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.70414`"}], ",", 
-     RowBox[{"-", "9.19262`"}], ",", 
-     RowBox[{"-", "3.17901`"}], ",", 
-     RowBox[{"-", "1.69711`"}], ",", 
-     RowBox[{"-", "1.31384`"}], ",", "1.37684`", ",", "2.14502`", ",", 
-     "3.35397`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.52586`"}], ",", 
-     RowBox[{"-", "9.53633`"}], ",", 
-     RowBox[{"-", "3.30018`"}], ",", 
-     RowBox[{"-", "1.6421`"}], ",", 
-     RowBox[{"-", "1.18151`"}], ",", "1.17912`", ",", "2.37725`", ",", 
-     "3.633`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.32995`"}], ",", 
-     RowBox[{"-", "9.85541`"}], ",", 
-     RowBox[{"-", "3.37667`"}], ",", 
-     RowBox[{"-", "1.6936`"}], ",", 
-     RowBox[{"-", "0.97232`"}], ",", "0.98106`", ",", "2.61367`", ",", 
-     "3.91346`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.14628`"}], ",", 
-     RowBox[{"-", "10.11215`"}], ",", 
-     RowBox[{"-", "3.33584`"}], ",", 
-     RowBox[{"-", "1.68406`"}], ",", 
-     RowBox[{"-", "0.8108`"}], ",", "0.92516`", ",", "2.8731`", ",", 
-     "4.09735`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.00932`"}], ",", 
-     RowBox[{"-", "10.29962`"}], ",", 
-     RowBox[{"-", "3.42165`"}], ",", 
-     RowBox[{"-", "1.66156`"}], ",", 
-     RowBox[{"-", "0.7535`"}], ",", "0.68601`", ",", "2.83991`", ",", 
-     "4.2155`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "11.95828`"}], ",", 
-     RowBox[{"-", "10.38004`"}], ",", 
-     RowBox[{"-", "3.43483`"}], ",", 
-     RowBox[{"-", "1.68577`"}], ",", 
-     RowBox[{"-", "0.7145`"}], ",", "0.63986`", ",", "2.8775`", ",", 
-     "4.25154`"}], "}"}]}], "}"}]], "Output",
+ TemplateBox[{
+  "Part","take",
+   "\"Cannot take positions \\!\\(\\*RowBox[{\\\"11\\\"}]\\) through \
+\\!\\(\\*RowBox[{\\\"23\\\"}]\\) in \\!\\(\\*RowBox[{\\\"Lookup\\\", \
+\\\"[\\\", RowBox[{\\\"kPointInfo\\\", \\\",\\\", \\\"\\\\\\\"band_energies\\\
+\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,9,17,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.705977735785201*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Lookup", "[", 
+   RowBox[{"kPointInfo", ",", "\<\"band_energies\"\>"}], "]"}], 
+  "\[LeftDoubleBracket]", 
+  RowBox[{"11", ";;", "23"}], "\[RightDoubleBracket]"}]], "Output",
  CellChangeTimes->{3.705891704331009*^9, 3.7058917368918285`*^9, 
-  3.705919837854215*^9}]
+  3.705919837854215*^9, 3.7059777358077517`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1631,103 +174,14 @@ Cell[BoxData[
    3.7051418917813864`*^9, 3.705141897300576*^9}, 3.705891744647188*^9}],
 
 Cell[BoxData[
- RowBox[{"{", 
+ RowBox[{"Transpose", "[", 
   RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.39095`"}], ",", 
-     RowBox[{"-", "13.3756`"}], ",", 
-     RowBox[{"-", "13.33044`"}], ",", 
-     RowBox[{"-", "13.2578`"}], ",", 
-     RowBox[{"-", "13.15627`"}], ",", 
-     RowBox[{"-", "13.02653`"}], ",", 
-     RowBox[{"-", "12.8742`"}], ",", 
-     RowBox[{"-", "12.70414`"}], ",", 
-     RowBox[{"-", "12.52586`"}], ",", 
-     RowBox[{"-", "12.32995`"}], ",", 
-     RowBox[{"-", "12.14628`"}], ",", 
-     RowBox[{"-", "12.00932`"}], ",", 
-     RowBox[{"-", "11.95828`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "7.51708`"}], ",", 
-     RowBox[{"-", "7.56522`"}], ",", 
-     RowBox[{"-", "7.70573`"}], ",", 
-     RowBox[{"-", "7.93204`"}], ",", 
-     RowBox[{"-", "8.20093`"}], ",", 
-     RowBox[{"-", "8.51172`"}], ",", 
-     RowBox[{"-", "8.84208`"}], ",", 
-     RowBox[{"-", "9.19262`"}], ",", 
-     RowBox[{"-", "9.53633`"}], ",", 
-     RowBox[{"-", "9.85541`"}], ",", 
-     RowBox[{"-", "10.11215`"}], ",", 
-     RowBox[{"-", "10.29962`"}], ",", 
-     RowBox[{"-", "10.38004`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "2.65223`"}], ",", 
-     RowBox[{"-", "2.67264`"}], ",", 
-     RowBox[{"-", "2.67563`"}], ",", 
-     RowBox[{"-", "2.77118`"}], ",", 
-     RowBox[{"-", "2.88178`"}], ",", 
-     RowBox[{"-", "2.95867`"}], ",", 
-     RowBox[{"-", "3.06303`"}], ",", 
-     RowBox[{"-", "3.17901`"}], ",", 
-     RowBox[{"-", "3.30018`"}], ",", 
-     RowBox[{"-", "3.37667`"}], ",", 
-     RowBox[{"-", "3.33584`"}], ",", 
-     RowBox[{"-", "3.42165`"}], ",", 
-     RowBox[{"-", "3.43483`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "2.65223`"}], ",", 
-     RowBox[{"-", "2.56823`"}], ",", 
-     RowBox[{"-", "2.43106`"}], ",", 
-     RowBox[{"-", "2.25272`"}], ",", 
-     RowBox[{"-", "2.00143`"}], ",", 
-     RowBox[{"-", "1.82343`"}], ",", 
-     RowBox[{"-", "1.67606`"}], ",", 
-     RowBox[{"-", "1.69711`"}], ",", 
-     RowBox[{"-", "1.6421`"}], ",", 
-     RowBox[{"-", "1.6936`"}], ",", 
-     RowBox[{"-", "1.68406`"}], ",", 
-     RowBox[{"-", "1.66156`"}], ",", 
-     RowBox[{"-", "1.68577`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "1.9441`"}], ",", 
-     RowBox[{"-", "1.9307`"}], ",", 
-     RowBox[{"-", "1.89133`"}], ",", 
-     RowBox[{"-", "1.82841`"}], ",", 
-     RowBox[{"-", "1.73617`"}], ",", 
-     RowBox[{"-", "1.59638`"}], ",", 
-     RowBox[{"-", "1.4565`"}], ",", 
-     RowBox[{"-", "1.31384`"}], ",", 
-     RowBox[{"-", "1.18151`"}], ",", 
-     RowBox[{"-", "0.97232`"}], ",", 
-     RowBox[{"-", "0.8108`"}], ",", 
-     RowBox[{"-", "0.7535`"}], ",", 
-     RowBox[{"-", "0.7145`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "1.80278`", ",", "1.80964`", ",", "1.76933`", ",", "1.73956`", ",", 
-     "1.72382`", ",", "1.70986`", ",", "1.57912`", ",", "1.37684`", ",", 
-     "1.17912`", ",", "0.98106`", ",", "0.92516`", ",", "0.68601`", ",", 
-     "0.63986`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "1.80278`", ",", "1.84321`", ",", "2.01118`", ",", "1.93585`", ",", 
-     "1.83692`", ",", "1.84732`", ",", "1.96431`", ",", "2.14502`", ",", 
-     "2.37725`", ",", "2.61367`", ",", "2.8731`", ",", "2.83991`", ",", 
-     "2.8775`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "2.09076`", ",", "2.07522`", ",", "2.02593`", ",", "2.20316`", ",", 
-     "2.45093`", ",", "2.72966`", ",", "3.06652`", ",", "3.35397`", ",", 
-     "3.633`", ",", "3.91346`", ",", "4.09735`", ",", "4.2155`", ",", 
-     "4.25154`"}], "}"}]}], "}"}]], "Output",
+   RowBox[{"Lookup", "[", 
+    RowBox[{"kPointInfo", ",", "\<\"band_energies\"\>"}], "]"}], 
+   "\[LeftDoubleBracket]", 
+   RowBox[{"11", ";;", "23"}], "\[RightDoubleBracket]"}], "]"}]], "Output",
  CellChangeTimes->{3.705141378932268*^9, 3.705141897628577*^9, 
-  3.705891745146489*^9, 3.7059200536764445`*^9}]
+  3.705891745146489*^9, 3.7059200536764445`*^9, 3.7059777358172584`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1741,155 +195,25 @@ Cell[BoxData[
   3.7059198497186236`*^9, 3.705919853607398*^9}}],
 
 Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "11.95828`"}], ",", 
-     RowBox[{"-", "10.38004`"}], ",", 
-     RowBox[{"-", "3.43483`"}], ",", 
-     RowBox[{"-", "1.68577`"}], ",", 
-     RowBox[{"-", "0.7145`"}], ",", "0.63986`", ",", "2.8775`", ",", 
-     "4.25154`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "11.97427`"}], ",", 
-     RowBox[{"-", "10.33657`"}], ",", 
-     RowBox[{"-", "3.43241`"}], ",", 
-     RowBox[{"-", "1.63272`"}], ",", 
-     RowBox[{"-", "0.7114`"}], ",", "0.60104`", ",", "2.87581`", ",", 
-     "4.24472`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.04249`"}], ",", 
-     RowBox[{"-", "10.23023`"}], ",", 
-     RowBox[{"-", "3.43513`"}], ",", 
-     RowBox[{"-", "1.6517`"}], ",", 
-     RowBox[{"-", "0.93705`"}], ",", "0.53074`", ",", "2.85457`", ",", 
-     "4.15406`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.12996`"}], ",", 
-     RowBox[{"-", "10.05818`"}], ",", 
-     RowBox[{"-", "3.38724`"}], ",", 
-     RowBox[{"-", "1.62709`"}], ",", 
-     RowBox[{"-", "1.21729`"}], ",", "0.48297`", ",", "2.75436`", ",", 
-     "4.08128`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.23886`"}], ",", 
-     RowBox[{"-", "9.85909`"}], ",", 
-     RowBox[{"-", "3.37374`"}], ",", 
-     RowBox[{"-", "1.66549`"}], ",", 
-     RowBox[{"-", "1.55269`"}], ",", "0.42966`", ",", "2.59291`", ",", 
-     "3.92968`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.34735`"}], ",", 
-     RowBox[{"-", "9.61276`"}], ",", 
-     RowBox[{"-", "3.27121`"}], ",", 
-     RowBox[{"-", "1.9596`"}], ",", 
-     RowBox[{"-", "1.59697`"}], ",", "0.51177`", ",", "2.54113`", ",", 
-     "3.80179`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.45735`"}], ",", 
-     RowBox[{"-", "9.37494`"}], ",", 
-     RowBox[{"-", "3.23902`"}], ",", 
-     RowBox[{"-", "2.26502`"}], ",", 
-     RowBox[{"-", "1.6125`"}], ",", "0.47224`", ",", "2.38239`", ",", 
-     "3.65538`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.56828`"}], ",", 
-     RowBox[{"-", "9.11229`"}], ",", 
-     RowBox[{"-", "3.12552`"}], ",", 
-     RowBox[{"-", "2.54579`"}], ",", 
-     RowBox[{"-", "1.57529`"}], ",", "0.59303`", ",", "2.30823`", ",", 
-     "3.50428`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.67539`"}], ",", 
-     RowBox[{"-", "8.8795`"}], ",", 
-     RowBox[{"-", "3.0361`"}], ",", 
-     RowBox[{"-", "2.7197`"}], ",", 
-     RowBox[{"-", "1.62067`"}], ",", "0.66309`", ",", "2.20733`", ",", 
-     "3.31016`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.78526`"}], ",", 
-     RowBox[{"-", "8.63827`"}], ",", 
-     RowBox[{"-", "2.95321`"}], ",", 
-     RowBox[{"-", "2.83381`"}], ",", 
-     RowBox[{"-", "1.71047`"}], ",", "0.80813`", ",", "2.12236`", ",", 
-     "3.10465`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "12.89093`"}], ",", 
-     RowBox[{"-", "8.41165`"}], ",", 
-     RowBox[{"-", "2.84523`"}], ",", 
-     RowBox[{"-", "2.82316`"}], ",", 
-     RowBox[{"-", "1.81613`"}], ",", "1.0473`", ",", "2.03795`", ",", 
-     "2.96136`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.00555`"}], ",", 
-     RowBox[{"-", "8.19579`"}], ",", 
-     RowBox[{"-", "2.82956`"}], ",", 
-     RowBox[{"-", "2.77784`"}], ",", 
-     RowBox[{"-", "1.94955`"}], ",", "1.3506`", ",", "1.99729`", ",", 
-     "2.66627`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.11044`"}], ",", 
-     RowBox[{"-", "7.99398`"}], ",", 
-     RowBox[{"-", "2.73053`"}], ",", 
-     RowBox[{"-", "2.69298`"}], ",", 
-     RowBox[{"-", "2.06499`"}], ",", "1.62894`", ",", "1.91242`", ",", 
-     "2.44143`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.19702`"}], ",", 
-     RowBox[{"-", "7.82276`"}], ",", 
-     RowBox[{"-", "2.64955`"}], ",", 
-     RowBox[{"-", "2.52689`"}], ",", 
-     RowBox[{"-", "2.18806`"}], ",", "1.89057`", ",", "1.91932`", ",", 
-     "2.24293`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.27901`"}], ",", 
-     RowBox[{"-", "7.69045`"}], ",", 
-     RowBox[{"-", "2.65034`"}], ",", 
-     RowBox[{"-", "2.3478`"}], ",", 
-     RowBox[{"-", "2.34183`"}], ",", "1.85963`", ",", "1.98054`", ",", 
-     "2.04823`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.34105`"}], ",", 
-     RowBox[{"-", "7.60086`"}], ",", 
-     RowBox[{"-", "2.64855`"}], ",", 
-     RowBox[{"-", "2.50416`"}], ",", 
-     RowBox[{"-", "2.16355`"}], ",", "1.82011`", ",", "1.923`", ",", 
-     "1.99767`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.37829`"}], ",", 
-     RowBox[{"-", "7.53877`"}], ",", 
-     RowBox[{"-", "2.65887`"}], ",", 
-     RowBox[{"-", "2.60526`"}], ",", 
-     RowBox[{"-", "2.00404`"}], ",", "1.81009`", ",", "1.82774`", ",", 
-     "2.06721`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "13.39095`"}], ",", 
-     RowBox[{"-", "7.51708`"}], ",", 
-     RowBox[{"-", "2.65223`"}], ",", 
-     RowBox[{"-", "2.65223`"}], ",", 
-     RowBox[{"-", "1.9441`"}], ",", "1.80278`", ",", "1.80278`", ",", 
-     "2.09076`"}], "}"}]}], "}"}]], "Output",
+ TemplateBox[{
+  "Part","take",
+   "\"Cannot take positions \\!\\(\\*RowBox[{\\\"23\\\"}]\\) through \
+\\!\\(\\*RowBox[{\\\"40\\\"}]\\) in \\!\\(\\*RowBox[{\\\"Lookup\\\", \
+\\\"[\\\", RowBox[{\\\"kPointInfo\\\", \\\",\\\", \\\"\\\\\\\"band_energies\\\
+\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,11,18,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.705977735827267*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Lookup", "[", 
+   RowBox[{"kPointInfo", ",", "\<\"band_energies\"\>"}], "]"}], 
+  "\[LeftDoubleBracket]", 
+  RowBox[{"23", ";;", "40"}], "\[RightDoubleBracket]"}]], "Output",
  CellChangeTimes->{{3.70589177732542*^9, 3.7058917807024884`*^9}, {
-  3.7059198569697485`*^9, 3.7059198621624794`*^9}, {3.7059199366983423`*^9, 
-  3.7059199386027117`*^9}, {3.7059200401276236`*^9, 3.70592007250685*^9}}]
+   3.7059198569697485`*^9, 3.7059198621624794`*^9}, {3.7059199366983423`*^9, 
+   3.7059199386027117`*^9}, {3.7059200401276236`*^9, 3.70592007250685*^9}, 
+   3.7059777358502903`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1902,131 +226,14 @@ Cell[BoxData[
    3.7051419029852514`*^9, 3.7051419084564056`*^9}, 3.705891786234045*^9}],
 
 Cell[BoxData[
- RowBox[{"{", 
+ RowBox[{"Transpose", "[", 
   RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "11.95828`"}], ",", 
-     RowBox[{"-", "11.97427`"}], ",", 
-     RowBox[{"-", "12.04249`"}], ",", 
-     RowBox[{"-", "12.12996`"}], ",", 
-     RowBox[{"-", "12.23886`"}], ",", 
-     RowBox[{"-", "12.34735`"}], ",", 
-     RowBox[{"-", "12.45735`"}], ",", 
-     RowBox[{"-", "12.56828`"}], ",", 
-     RowBox[{"-", "12.67539`"}], ",", 
-     RowBox[{"-", "12.78526`"}], ",", 
-     RowBox[{"-", "12.89093`"}], ",", 
-     RowBox[{"-", "13.00555`"}], ",", 
-     RowBox[{"-", "13.11044`"}], ",", 
-     RowBox[{"-", "13.19702`"}], ",", 
-     RowBox[{"-", "13.27901`"}], ",", 
-     RowBox[{"-", "13.34105`"}], ",", 
-     RowBox[{"-", "13.37829`"}], ",", 
-     RowBox[{"-", "13.39095`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "10.38004`"}], ",", 
-     RowBox[{"-", "10.33657`"}], ",", 
-     RowBox[{"-", "10.23023`"}], ",", 
-     RowBox[{"-", "10.05818`"}], ",", 
-     RowBox[{"-", "9.85909`"}], ",", 
-     RowBox[{"-", "9.61276`"}], ",", 
-     RowBox[{"-", "9.37494`"}], ",", 
-     RowBox[{"-", "9.11229`"}], ",", 
-     RowBox[{"-", "8.8795`"}], ",", 
-     RowBox[{"-", "8.63827`"}], ",", 
-     RowBox[{"-", "8.41165`"}], ",", 
-     RowBox[{"-", "8.19579`"}], ",", 
-     RowBox[{"-", "7.99398`"}], ",", 
-     RowBox[{"-", "7.82276`"}], ",", 
-     RowBox[{"-", "7.69045`"}], ",", 
-     RowBox[{"-", "7.60086`"}], ",", 
-     RowBox[{"-", "7.53877`"}], ",", 
-     RowBox[{"-", "7.51708`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "3.43483`"}], ",", 
-     RowBox[{"-", "3.43241`"}], ",", 
-     RowBox[{"-", "3.43513`"}], ",", 
-     RowBox[{"-", "3.38724`"}], ",", 
-     RowBox[{"-", "3.37374`"}], ",", 
-     RowBox[{"-", "3.27121`"}], ",", 
-     RowBox[{"-", "3.23902`"}], ",", 
-     RowBox[{"-", "3.12552`"}], ",", 
-     RowBox[{"-", "3.0361`"}], ",", 
-     RowBox[{"-", "2.95321`"}], ",", 
-     RowBox[{"-", "2.84523`"}], ",", 
-     RowBox[{"-", "2.82956`"}], ",", 
-     RowBox[{"-", "2.73053`"}], ",", 
-     RowBox[{"-", "2.64955`"}], ",", 
-     RowBox[{"-", "2.65034`"}], ",", 
-     RowBox[{"-", "2.64855`"}], ",", 
-     RowBox[{"-", "2.65887`"}], ",", 
-     RowBox[{"-", "2.65223`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "1.68577`"}], ",", 
-     RowBox[{"-", "1.63272`"}], ",", 
-     RowBox[{"-", "1.6517`"}], ",", 
-     RowBox[{"-", "1.62709`"}], ",", 
-     RowBox[{"-", "1.66549`"}], ",", 
-     RowBox[{"-", "1.9596`"}], ",", 
-     RowBox[{"-", "2.26502`"}], ",", 
-     RowBox[{"-", "2.54579`"}], ",", 
-     RowBox[{"-", "2.7197`"}], ",", 
-     RowBox[{"-", "2.83381`"}], ",", 
-     RowBox[{"-", "2.82316`"}], ",", 
-     RowBox[{"-", "2.77784`"}], ",", 
-     RowBox[{"-", "2.69298`"}], ",", 
-     RowBox[{"-", "2.52689`"}], ",", 
-     RowBox[{"-", "2.3478`"}], ",", 
-     RowBox[{"-", "2.50416`"}], ",", 
-     RowBox[{"-", "2.60526`"}], ",", 
-     RowBox[{"-", "2.65223`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"-", "0.7145`"}], ",", 
-     RowBox[{"-", "0.7114`"}], ",", 
-     RowBox[{"-", "0.93705`"}], ",", 
-     RowBox[{"-", "1.21729`"}], ",", 
-     RowBox[{"-", "1.55269`"}], ",", 
-     RowBox[{"-", "1.59697`"}], ",", 
-     RowBox[{"-", "1.6125`"}], ",", 
-     RowBox[{"-", "1.57529`"}], ",", 
-     RowBox[{"-", "1.62067`"}], ",", 
-     RowBox[{"-", "1.71047`"}], ",", 
-     RowBox[{"-", "1.81613`"}], ",", 
-     RowBox[{"-", "1.94955`"}], ",", 
-     RowBox[{"-", "2.06499`"}], ",", 
-     RowBox[{"-", "2.18806`"}], ",", 
-     RowBox[{"-", "2.34183`"}], ",", 
-     RowBox[{"-", "2.16355`"}], ",", 
-     RowBox[{"-", "2.00404`"}], ",", 
-     RowBox[{"-", "1.9441`"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "0.63986`", ",", "0.60104`", ",", "0.53074`", ",", "0.48297`", ",", 
-     "0.42966`", ",", "0.51177`", ",", "0.47224`", ",", "0.59303`", ",", 
-     "0.66309`", ",", "0.80813`", ",", "1.0473`", ",", "1.3506`", ",", 
-     "1.62894`", ",", "1.89057`", ",", "1.85963`", ",", "1.82011`", ",", 
-     "1.81009`", ",", "1.80278`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "2.8775`", ",", "2.87581`", ",", "2.85457`", ",", "2.75436`", ",", 
-     "2.59291`", ",", "2.54113`", ",", "2.38239`", ",", "2.30823`", ",", 
-     "2.20733`", ",", "2.12236`", ",", "2.03795`", ",", "1.99729`", ",", 
-     "1.91242`", ",", "1.91932`", ",", "1.98054`", ",", "1.923`", ",", 
-     "1.82774`", ",", "1.80278`"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-    "4.25154`", ",", "4.24472`", ",", "4.15406`", ",", "4.08128`", ",", 
-     "3.92968`", ",", "3.80179`", ",", "3.65538`", ",", "3.50428`", ",", 
-     "3.31016`", ",", "3.10465`", ",", "2.96136`", ",", "2.66627`", ",", 
-     "2.44143`", ",", "2.24293`", ",", "2.04823`", ",", "1.99767`", ",", 
-     "2.06721`", ",", "2.09076`"}], "}"}]}], "}"}]], "Output",
+   RowBox[{"Lookup", "[", 
+    RowBox[{"kPointInfo", ",", "\<\"band_energies\"\>"}], "]"}], 
+   "\[LeftDoubleBracket]", 
+   RowBox[{"23", ";;", "40"}], "\[RightDoubleBracket]"}], "]"}]], "Output",
  CellChangeTimes->{3.705141410763968*^9, 3.7051419088553233`*^9, 
-  3.7058917866302233`*^9, 3.7059200758061867`*^9}]
+  3.7058917866302233`*^9, 3.7059200758061867`*^9, 3.70597773585929*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2052,82 +259,71 @@ Cell[BoxData[
    3.705920521715583*^9, 3.705920524208991*^9}}],
 
 Cell[BoxData[
- GraphicsBox[{{}, {{}, {}, 
-    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.011000000000000001`],
-      AbsoluteThickness[1.6], 
-     LineBox[{{1., -11.95828}, {2., -12.03247}, {3., -12.21692}, {
-      4., -12.44823}, {5., -12.66752}, {6., -12.8742}, {7., -13.05385}, {
-      8., -13.19962}, {9., -13.30489}, {10., -13.36918}, {11., -13.39095}}]}, 
-    {RGBColor[0.880722, 0.611041, 0.142051], PointSize[0.011000000000000001`],
-      AbsoluteThickness[1.6], 
-     LineBox[{{1., -10.38004}, {2., -10.26805}, {3., -10.02701}, {
-      4., -9.66783}, {5., -9.26219}, {6., -8.84208}, {7., -8.44466}, {
-      8., -8.08073}, {9., -7.78943}, {10., -7.58799}, {11., -7.51708}}]}, 
-    {RGBColor[0.560181, 0.691569, 0.194885], PointSize[0.011000000000000001`],
-      AbsoluteThickness[1.6], 
-     LineBox[{{1., -3.43483}, {2., -3.41614}, {3., -3.41338}, {
-      4., -3.33439}, {5., -3.19984}, {6., -3.06303}, {7., -2.93412}, {
-      8., -2.83489}, {9., -2.71101}, {10., -2.68145}, {11., -2.65223}}]}, 
-    {RGBColor[0.922526, 0.385626, 0.209179], PointSize[0.011000000000000001`],
-      AbsoluteThickness[1.6], 
-     LineBox[{{1., -1.68577}, {2., -1.66186}, {3., -1.68738}, {4., -1.632}, {
-      5., -1.68596}, {6., -1.67606}, {7., -1.85336}, {8., -2.07239}, {
-      9., -2.36942}, {10., -2.55119}, {11., -2.65223}}]}, 
-    {RGBColor[0.528488, 0.470624, 0.701351], PointSize[0.011000000000000001`],
-      AbsoluteThickness[1.6], 
-     LineBox[{{1., -0.7145}, {2., -0.76976}, {3., -0.88039}, {4., -1.11786}, {
-      5., -1.28307}, {6., -1.4565}, {7., -1.61964}, {8., -1.77359}, {
-      9., -1.86909}, {10., -1.92509}, {11., -1.9441}}]}, 
-    {RGBColor[0.772079, 0.431554, 0.102387], PointSize[0.011000000000000001`],
-      AbsoluteThickness[1.6], 
-     LineBox[{{1., 0.63986}, {2., 0.7054}, {3., 0.87266}, {4., 1.10026}, {5., 
-      1.33755}, {6., 1.57912}, {7., 1.74201}, {8., 1.72666}, {9., 1.7475}, {
-      10., 1.80222}, {11., 1.80278}}]}, 
-    {RGBColor[0.363898, 0.618501, 0.782349], PointSize[0.011000000000000001`],
-      AbsoluteThickness[1.6], 
-     LineBox[{{1., 2.8775}, {2., 2.81694}, {3., 2.752}, {4., 2.47724}, {5., 
-      2.18956}, {6., 1.96431}, {7., 1.83354}, {8., 1.88972}, {9., 1.99386}, {
-      10., 1.86079}, {11., 1.80278}}]}, 
-    {RGBColor[1, 0.75, 0], PointSize[0.011000000000000001`], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., 4.25157}, {2., 4.19824}, {3., 4.03101}, {4., 3.73432}, {5.,
-       3.41161}, {6., 3.06652}, {7., 2.67237}, {8., 2.3486}, {9., 2.08086}, {
-      10., 2.06702}, {11., 2.09076}}]}}, {}, {}, {{}, {}}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->{True, True},
-  AxesLabel->{None, 
-    FormBox[
-     TagBox["eV", HoldForm], TraditionalForm]},
-  AxesOrigin->{0., 0},
-  DisplayFunction->Identity,
-  Frame->{{False, False}, {False, False}},
-  FrameLabel->{{None, None}, {None, None}},
-  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  ImagePadding->All,
-  Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
-         Part[#, 1]], 
-        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
-         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
-         Part[#, 1]], 
-        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
-         Part[#, 2]]}& )}},
-  PlotLabel->FormBox[
-   "\"Band energies from L to \[CapitalGamma]\"", TraditionalForm],
-  PlotRange->{{0., 11.}, {-13.39095, 4.25157}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {
-     Scaled[0.05], 
-     Scaled[0.05]}},
-  Ticks->{Automatic, Automatic}]], "Output",
+ TemplateBox[{
+  "ListPlot","lpn",
+   "\"\\!\\(\\*RowBox[{\\\"Transpose\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"Lookup\\\", \\\"[\\\", RowBox[{\\\"kPointInfo\\\", \
+\\\",\\\", \\\"\\\\\\\"band_energies\\\\\\\"\\\"}], \\\"]\\\"}], \\\"\
+\[LeftDoubleBracket]\\\", RowBox[{\\\"1\\\", \\\";;\\\", \\\"11\\\"}], \\\"\
+\[RightDoubleBracket]\\\"}], \\\"]\\\"}]\\) is not a list of numbers or pairs \
+of numbers.\"",2,13,19,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7059777358998194`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ListPlot","lpn",
+   "\"\\!\\(\\*RowBox[{\\\"Transpose\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"Lookup\\\", \\\"[\\\", RowBox[{\\\"kPointInfo\\\", \
+\\\",\\\", \\\"\\\\\\\"band_energies\\\\\\\"\\\"}], \\\"]\\\"}], \\\"\
+\[LeftDoubleBracket]\\\", RowBox[{\\\"1\\\", \\\";;\\\", \\\"11\\\"}], \\\"\
+\[RightDoubleBracket]\\\"}], \\\"]\\\"}]\\) is not a list of numbers or pairs \
+of numbers.\"",2,13,20,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7059777359523735`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ListPlot","lpn",
+   "\"\\!\\(\\*RowBox[{\\\"Transpose\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"Lookup\\\", \\\"[\\\", RowBox[{\\\"kPointInfo\\\", \
+\\\",\\\", \\\"\\\\\\\"band_energies\\\\\\\"\\\"}], \\\"]\\\"}], \\\"\
+\[LeftDoubleBracket]\\\", RowBox[{\\\"1\\\", \\\";;\\\", \\\"11\\\"}], \\\"\
+\[RightDoubleBracket]\\\"}], \\\"]\\\"}]\\) is not a list of numbers or pairs \
+of numbers.\"",2,13,21,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7059777360034294`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"ListPlot\\\", \
+\\\"::\\\", \\\"lpn\\\"}], \\\"MessageName\\\"]\\) will be suppressed during \
+this calculation.\"",2,13,22,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.705977736025449*^9}],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"Transpose", "[", 
+    RowBox[{
+     RowBox[{"Lookup", "[", 
+      RowBox[{"kPointInfo", ",", "\<\"band_energies\"\>"}], "]"}], 
+     "\[LeftDoubleBracket]", 
+     RowBox[{"1", ";;", "11"}], "\[RightDoubleBracket]"}], "]"}], ",", 
+   RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"None", ",", 
+      TagBox["eV",
+       HoldForm]}], "}"}]}], ",", 
+   RowBox[{
+   "PlotLabel", 
+    "\[Rule]", "\<\"Band energies from L to \[CapitalGamma]\"\>"}]}], 
+  "]"}]], "Output",
  CellChangeTimes->{3.7059203001764746`*^9, 3.705920371998779*^9, 
-  3.705920411340781*^9, 3.705920524758381*^9}]
+  3.705920411340781*^9, 3.705920524758381*^9, 3.7059777360594893`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2150,86 +346,71 @@ Cell[BoxData[
    3.705920531191701*^9}}],
 
 Cell[BoxData[
- GraphicsBox[{{}, {{}, {}, 
-    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., -13.39095}, {2., -13.3756}, {3., -13.33044}, {
-      4., -13.2578}, {5., -13.15627}, {6., -13.02653}, {7., -12.8742}, {
-      8., -12.70414}, {9., -12.52586}, {10., -12.32995}, {11., -12.14628}, {
-      12., -12.00932}, {13., -11.95828}}]}, 
-    {RGBColor[0.880722, 0.611041, 0.142051], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., -7.51708}, {2., -7.56522}, {3., -7.70573}, {
-      4., -7.93204}, {5., -8.20093}, {6., -8.51172}, {7., -8.84208}, {
-      8., -9.19262}, {9., -9.53633}, {10., -9.85541}, {11., -10.11215}, {
-      12., -10.29962}, {13., -10.38004}}]}, 
-    {RGBColor[0.560181, 0.691569, 0.194885], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., -2.65223}, {2., -2.67264}, {3., -2.67563}, {
-      4., -2.77118}, {5., -2.88178}, {6., -2.95867}, {7., -3.06303}, {
-      8., -3.17901}, {9., -3.30018}, {10., -3.37667}, {11., -3.33584}, {
-      12., -3.42165}, {13., -3.43483}}]}, 
-    {RGBColor[0.922526, 0.385626, 0.209179], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., -2.65223}, {2., -2.56823}, {3., -2.43106}, {
-      4., -2.25272}, {5., -2.00143}, {6., -1.82343}, {7., -1.67606}, {
-      8., -1.69711}, {9., -1.6421}, {10., -1.6936}, {11., -1.68406}, {
-      12., -1.66156}, {13., -1.68577}}]}, 
-    {RGBColor[0.528488, 0.470624, 0.701351], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., -1.9441}, {2., -1.9307}, {3., -1.89133}, {4., -1.82841}, {
-      5., -1.73617}, {6., -1.59638}, {7., -1.4565}, {8., -1.31384}, {
-      9., -1.18151}, {10., -0.97232}, {11., -0.8108}, {12., -0.7535}, {
-      13., -0.7145}}]}, 
-    {RGBColor[0.772079, 0.431554, 0.102387], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., 1.80278}, {2., 1.80964}, {3., 1.76933}, {4., 1.73956}, {5.,
-       1.72382}, {6., 1.70986}, {7., 1.57912}, {8., 1.37684}, {9., 1.17912}, {
-      10., 0.98106}, {11., 0.92516}, {12., 0.68601}, {13., 0.63986}}]}, 
-    {RGBColor[0.363898, 0.618501, 0.782349], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., 1.80278}, {2., 1.84321}, {3., 2.01118}, {4., 1.93585}, {5.,
-       1.83692}, {6., 1.84732}, {7., 1.96431}, {8., 2.14502}, {9., 2.37725}, {
-      10., 2.61367}, {11., 2.8731}, {12., 2.83991}, {13., 2.8775}}]}, 
-    {RGBColor[1, 0.75, 0], PointSize[0.009166666666666668], AbsoluteThickness[
-     1.6], LineBox[{{1., 2.09076}, {2., 2.07522}, {3., 2.02593}, {4., 
-      2.20316}, {5., 2.45093}, {6., 2.72966}, {7., 3.06652}, {8., 3.35397}, {
-      9., 3.633}, {10., 3.91346}, {11., 4.09735}, {12., 4.2155}, {13., 
-      4.25154}}]}}, {}, {}, {{}, {}}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->{True, True},
-  AxesLabel->{None, 
-    FormBox[
-     TagBox["eV", HoldForm], TraditionalForm]},
-  AxesOrigin->{0., 0},
-  DisplayFunction->Identity,
-  Frame->{{False, False}, {False, False}},
-  FrameLabel->{{None, None}, {None, None}},
-  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  ImagePadding->All,
-  Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
-         Part[#, 1]], 
-        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
-         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
-         Part[#, 1]], 
-        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
-         Part[#, 2]]}& )}},
-  PlotLabel->FormBox[
-   "\"Band energies from \[CapitalGamma] to X\"", TraditionalForm],
-  PlotRange->{{0., 13.}, {-13.39095, 4.25154}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {
-     Scaled[0.05], 
-     Scaled[0.05]}},
-  Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.705920450187508*^9, 3.7059205316169963`*^9}]
+ TemplateBox[{
+  "ListPlot","lpn",
+   "\"\\!\\(\\*RowBox[{\\\"Transpose\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"Lookup\\\", \\\"[\\\", RowBox[{\\\"kPointInfo\\\", \
+\\\",\\\", \\\"\\\\\\\"band_energies\\\\\\\"\\\"}], \\\"]\\\"}], \\\"\
+\[LeftDoubleBracket]\\\", RowBox[{\\\"11\\\", \\\";;\\\", \\\"23\\\"}], \\\"\
+\[RightDoubleBracket]\\\"}], \\\"]\\\"}]\\) is not a list of numbers or pairs \
+of numbers.\"",2,14,23,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.705977736095498*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ListPlot","lpn",
+   "\"\\!\\(\\*RowBox[{\\\"Transpose\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"Lookup\\\", \\\"[\\\", RowBox[{\\\"kPointInfo\\\", \
+\\\",\\\", \\\"\\\\\\\"band_energies\\\\\\\"\\\"}], \\\"]\\\"}], \\\"\
+\[LeftDoubleBracket]\\\", RowBox[{\\\"11\\\", \\\";;\\\", \\\"23\\\"}], \\\"\
+\[RightDoubleBracket]\\\"}], \\\"]\\\"}]\\) is not a list of numbers or pairs \
+of numbers.\"",2,14,24,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7059777361456146`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ListPlot","lpn",
+   "\"\\!\\(\\*RowBox[{\\\"Transpose\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"Lookup\\\", \\\"[\\\", RowBox[{\\\"kPointInfo\\\", \
+\\\",\\\", \\\"\\\\\\\"band_energies\\\\\\\"\\\"}], \\\"]\\\"}], \\\"\
+\[LeftDoubleBracket]\\\", RowBox[{\\\"11\\\", \\\";;\\\", \\\"23\\\"}], \\\"\
+\[RightDoubleBracket]\\\"}], \\\"]\\\"}]\\) is not a list of numbers or pairs \
+of numbers.\"",2,14,25,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.70597773619565*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"ListPlot\\\", \
+\\\"::\\\", \\\"lpn\\\"}], \\\"MessageName\\\"]\\) will be suppressed during \
+this calculation.\"",2,14,26,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.705977736218672*^9}],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"Transpose", "[", 
+    RowBox[{
+     RowBox[{"Lookup", "[", 
+      RowBox[{"kPointInfo", ",", "\<\"band_energies\"\>"}], "]"}], 
+     "\[LeftDoubleBracket]", 
+     RowBox[{"11", ";;", "23"}], "\[RightDoubleBracket]"}], "]"}], ",", 
+   RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"None", ",", 
+      TagBox["eV",
+       HoldForm]}], "}"}]}], ",", 
+   RowBox[{
+   "PlotLabel", 
+    "\[Rule]", "\<\"Band energies from \[CapitalGamma] to X\"\>"}]}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.705920450187508*^9, 3.7059205316169963`*^9, 
+  3.705977736251696*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2252,98 +433,72 @@ Cell[BoxData[
    3.7059205429131613`*^9}}],
 
 Cell[BoxData[
- GraphicsBox[{{}, {{}, {}, 
-    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., -11.95828}, {2., -11.97427}, {3., -12.04249}, {
-      4., -12.12996}, {5., -12.23886}, {6., -12.34735}, {7., -12.45735}, {
-      8., -12.56828}, {9., -12.67539}, {10., -12.78526}, {11., -12.89093}, {
-      12., -13.00555}, {13., -13.11044}, {14., -13.19702}, {15., -13.27901}, {
-      16., -13.34105}, {17., -13.37829}, {18., -13.39095}}]}, 
-    {RGBColor[0.880722, 0.611041, 0.142051], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., -10.38004}, {2., -10.33657}, {3., -10.23023}, {
-      4., -10.05818}, {5., -9.85909}, {6., -9.61276}, {7., -9.37494}, {
-      8., -9.11229}, {9., -8.8795}, {10., -8.63827}, {11., -8.41165}, {
-      12., -8.19579}, {13., -7.99398}, {14., -7.82276}, {15., -7.69045}, {
-      16., -7.60086}, {17., -7.53877}, {18., -7.51708}}]}, 
-    {RGBColor[0.560181, 0.691569, 0.194885], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., -3.43483}, {2., -3.43241}, {3., -3.43513}, {
-      4., -3.38724}, {5., -3.37374}, {6., -3.27121}, {7., -3.23902}, {
-      8., -3.12552}, {9., -3.0361}, {10., -2.95321}, {11., -2.84523}, {
-      12., -2.82956}, {13., -2.73053}, {14., -2.64955}, {15., -2.65034}, {
-      16., -2.64855}, {17., -2.65887}, {18., -2.65223}}]}, 
-    {RGBColor[0.922526, 0.385626, 0.209179], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., -1.68577}, {2., -1.63272}, {3., -1.6517}, {4., -1.62709}, {
-      5., -1.66549}, {6., -1.9596}, {7., -2.26502}, {8., -2.54579}, {
-      9., -2.7197}, {10., -2.83381}, {11., -2.82316}, {12., -2.77784}, {
-      13., -2.69298}, {14., -2.52689}, {15., -2.3478}, {16., -2.50416}, {
-      17., -2.60526}, {18., -2.65223}}]}, 
-    {RGBColor[0.528488, 0.470624, 0.701351], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., -0.7145}, {2., -0.7114}, {3., -0.93705}, {4., -1.21729}, {
-      5., -1.55269}, {6., -1.59697}, {7., -1.6125}, {8., -1.57529}, {
-      9., -1.62067}, {10., -1.71047}, {11., -1.81613}, {12., -1.94955}, {
-      13., -2.06499}, {14., -2.18806}, {15., -2.34183}, {16., -2.16355}, {
-      17., -2.00404}, {18., -1.9441}}]}, 
-    {RGBColor[0.772079, 0.431554, 0.102387], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., 0.63986}, {2., 0.60104}, {3., 0.53074}, {4., 0.48297}, {5.,
-       0.42966}, {6., 0.51177}, {7., 0.47224}, {8., 0.59303}, {9., 0.66309}, {
-      10., 0.80813}, {11., 1.0473}, {12., 1.3506}, {13., 1.62894}, {14., 
-      1.89057}, {15., 1.85963}, {16., 1.82011}, {17., 1.81009}, {18., 
-      1.80278}}]}, 
-    {RGBColor[0.363898, 0.618501, 0.782349], PointSize[0.009166666666666668], 
-     AbsoluteThickness[1.6], 
-     LineBox[{{1., 2.8775}, {2., 2.87581}, {3., 2.85457}, {4., 2.75436}, {5., 
-      2.59291}, {6., 2.54113}, {7., 2.38239}, {8., 2.30823}, {9., 2.20733}, {
-      10., 2.12236}, {11., 2.03795}, {12., 1.99729}, {13., 1.91242}, {14., 
-      1.91932}, {15., 1.98054}, {16., 1.923}, {17., 1.82774}, {18., 
-      1.80278}}]}, 
-    {RGBColor[1, 0.75, 0], PointSize[0.009166666666666668], AbsoluteThickness[
-     1.6], LineBox[{{1., 4.25154}, {2., 4.24472}, {3., 4.15406}, {4., 
-      4.08128}, {5., 3.92968}, {6., 3.80179}, {7., 3.65538}, {8., 3.50428}, {
-      9., 3.31016}, {10., 3.10465}, {11., 2.96136}, {12., 2.66627}, {13., 
-      2.44143}, {14., 2.24293}, {15., 2.04823}, {16., 1.99767}, {17., 
-      2.06721}, {18., 2.09076}}]}}, {}, {}, {{}, {}}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->{True, True},
-  AxesLabel->{None, 
-    FormBox[
-     TagBox["eV", HoldForm], TraditionalForm]},
-  AxesOrigin->{0., 0},
-  DisplayFunction->Identity,
-  Frame->{{False, False}, {False, False}},
-  FrameLabel->{{None, None}, {None, None}},
-  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  ImagePadding->All,
-  Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
-         Part[#, 1]], 
-        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
-         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
-         Part[#, 1]], 
-        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
-         Part[#, 2]]}& )}},
-  PlotLabel->FormBox[
-   "\"Band energies from X to \[CapitalGamma]\"", TraditionalForm],
-  PlotRange->{{0., 18.}, {-13.39095, 4.25154}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {
-     Scaled[0.05], 
-     Scaled[0.05]}},
-  Ticks->{Automatic, Automatic}]], "Output",
+ TemplateBox[{
+  "ListPlot","lpn",
+   "\"\\!\\(\\*RowBox[{\\\"Transpose\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"Lookup\\\", \\\"[\\\", RowBox[{\\\"kPointInfo\\\", \
+\\\",\\\", \\\"\\\\\\\"band_energies\\\\\\\"\\\"}], \\\"]\\\"}], \\\"\
+\[LeftDoubleBracket]\\\", RowBox[{\\\"23\\\", \\\";;\\\", \\\"40\\\"}], \\\"\
+\[RightDoubleBracket]\\\"}], \\\"]\\\"}]\\) is not a list of numbers or pairs \
+of numbers.\"",2,15,27,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.70597773628572*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ListPlot","lpn",
+   "\"\\!\\(\\*RowBox[{\\\"Transpose\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"Lookup\\\", \\\"[\\\", RowBox[{\\\"kPointInfo\\\", \
+\\\",\\\", \\\"\\\\\\\"band_energies\\\\\\\"\\\"}], \\\"]\\\"}], \\\"\
+\[LeftDoubleBracket]\\\", RowBox[{\\\"23\\\", \\\";;\\\", \\\"40\\\"}], \\\"\
+\[RightDoubleBracket]\\\"}], \\\"]\\\"}]\\) is not a list of numbers or pairs \
+of numbers.\"",2,15,28,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7059777363347588`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ListPlot","lpn",
+   "\"\\!\\(\\*RowBox[{\\\"Transpose\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"Lookup\\\", \\\"[\\\", RowBox[{\\\"kPointInfo\\\", \
+\\\",\\\", \\\"\\\\\\\"band_energies\\\\\\\"\\\"}], \\\"]\\\"}], \\\"\
+\[LeftDoubleBracket]\\\", RowBox[{\\\"23\\\", \\\";;\\\", \\\"40\\\"}], \\\"\
+\[RightDoubleBracket]\\\"}], \\\"]\\\"}]\\) is not a list of numbers or pairs \
+of numbers.\"",2,15,29,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7059777363827925`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"ListPlot\\\", \
+\\\"::\\\", \\\"lpn\\\"}], \\\"MessageName\\\"]\\) will be suppressed during \
+this calculation.\"",2,15,30,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7059777364258285`*^9}],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"Transpose", "[", 
+    RowBox[{
+     RowBox[{"Lookup", "[", 
+      RowBox[{"kPointInfo", ",", "\<\"band_energies\"\>"}], "]"}], 
+     "\[LeftDoubleBracket]", 
+     RowBox[{"23", ";;", "40"}], "\[RightDoubleBracket]"}], "]"}], ",", 
+   RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"None", ",", 
+      TagBox["eV",
+       HoldForm]}], "}"}]}], ",", 
+   RowBox[{
+   "PlotLabel", 
+    "\[Rule]", "\<\"Band energies from X to \[CapitalGamma]\"\>"}]}], 
+  "]"}]], "Output",
  CellChangeTimes->{3.7051415943373213`*^9, 3.7051419267783747`*^9, 
   3.705891797058483*^9, 3.705920086037141*^9, 3.7059203549893417`*^9, 
-  3.705920486389829*^9, 3.705920543341449*^9}]
+  3.705920486389829*^9, 3.705920543341449*^9, 3.7059777364578547`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2355,9 +510,28 @@ Cell[BoxData[
 ", ",", "lToGammaPlot"}], "]"}]], "Input",
  CellChangeTimes->{{3.705920559660037*^9, 3.7059206390497847`*^9}}],
 
-Cell[BoxData["\<\"N:\\\\abinit-simulations\\\\graphite\\\\band_energy_l_to_\
-gamma.svg\"\>"], "Output",
- CellChangeTimes->{3.7059206399184012`*^9}]
+Cell[BoxData[
+ TemplateBox[{
+  "Export","nodir",
+   "\"Directory \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"N:\\\\\\\\\\\\\\\\abinit-simulations\\\\\\\\\\\\\
+\\\\graphite\\\\\\\\\\\\\\\\\\\\\\\"\\\"}]\\) does not exist.\"",2,16,31,
+   19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.70597773648487*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Export","noopen",
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"N:\\\\\\\\\\\\\\\\abinit-simulations\\\\\\\\\\\\\
+\\\\graphite\\\\\\\\\\\\\\\\band_energy_l_to_gamma.svg\\\\\\\"\\\"}]\\).\"",2,
+   16,32,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.705977736509329*^9}],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.7059206399184012`*^9, 3.705977736527541*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2369,9 +543,28 @@ Cell[BoxData[
 ", ",", "gammaToXPlot"}], "]"}]], "Input",
  CellChangeTimes->{{3.7059207150519857`*^9, 3.705920743044345*^9}}],
 
-Cell[BoxData["\<\"N:\\\\abinit-simulations\\\\graphite\\\\band_energy_gamma_\
-to_x.svg\"\>"], "Output",
- CellChangeTimes->{3.705920743700828*^9}]
+Cell[BoxData[
+ TemplateBox[{
+  "Export","nodir",
+   "\"Directory \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"N:\\\\\\\\\\\\\\\\abinit-simulations\\\\\\\\\\\\\
+\\\\graphite\\\\\\\\\\\\\\\\\\\\\\\"\\\"}]\\) does not exist.\"",2,17,33,
+   19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7059777365445538`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Export","noopen",
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"N:\\\\\\\\\\\\\\\\abinit-simulations\\\\\\\\\\\\\
+\\\\graphite\\\\\\\\\\\\\\\\band_energy_gamma_to_x.svg\\\\\\\"\\\"}]\\).\"",2,
+   17,34,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7059777365665693`*^9}],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.705920743700828*^9, 3.7059777365855837`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2383,15 +576,127 @@ Cell[BoxData[
 gamma.svg\>\"", ",", "xToGammaPlot"}], "]"}]], "Input",
  CellChangeTimes->{{3.7059207446034517`*^9, 3.705920770767819*^9}}],
 
-Cell[BoxData["\<\"N:\\\\abinit-simulations\\\\graphite\\\\band_energy_x_to_\
-next_cell_gamma.svg\"\>"], "Output",
- CellChangeTimes->{3.7059207715083485`*^9}]
+Cell[BoxData[
+ TemplateBox[{
+  "Export","nodir",
+   "\"Directory \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"N:\\\\\\\\\\\\\\\\abinit-simulations\\\\\\\\\\\\\
+\\\\graphite\\\\\\\\\\\\\\\\\\\\\\\"\\\"}]\\) does not exist.\"",2,18,35,
+   19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.705977736624723*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Export","noopen",
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"N:\\\\\\\\\\\\\\\\abinit-simulations\\\\\\\\\\\\\
+\\\\graphite\\\\\\\\\\\\\\\\band_energy_x_to_next_cell_gamma.svg\\\\\\\"\\\"}]\
+\\).\"",2,18,36,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.705977736643736*^9}],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.7059207715083485`*^9, 3.705977736644737*^9}]
 }, Open  ]],
 
-Cell[BoxData[""], "Input",
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"bandEigenEnergiesByBand", " ", "=", " ", 
+  RowBox[{"Transpose", "[", "bandEigenvalues", "]"}]}]], "Input",
+ CellChangeTimes->{3.705977722548696*^9}],
+
+Cell[BoxData[
+ RowBox[{"Transpose", "[", 
+  RowBox[{"Lookup", "[", 
+   RowBox[{"kPointInfo", ",", "\<\"band_energies\"\>"}], "]"}], 
+  "]"}]], "Output",
+ CellChangeTimes->{{3.7059777231178102`*^9, 3.705977736654744*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"fullTraversalPlot", " ", "=", " ", 
+   RowBox[{"ListPlot", "[", 
+    RowBox[{"bandEigenEnergiesByBand", ",", 
+     RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"None", ",", 
+        RowBox[{"HoldForm", "[", "eV", "]"}]}], "}"}]}], ",", 
+     RowBox[{"PlotLabel", "\[Rule]", "\"\<Band energies in eV\>\""}], ",", 
+     RowBox[{"GridLines", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"11", ",", "24"}], "}"}]}]}], "]"}]}]}]], "Input",
  CellChangeTimes->{{3.70589191818108*^9, 3.7058919194827733`*^9}, {
   3.7059204996032*^9, 3.705920514639442*^9}, {3.7059205497239895`*^9, 
-  3.7059205501612835`*^9}}]
+  3.7059205501612835`*^9}, {3.705977558272664*^9, 3.705977732490385*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ListPlot","lpn",
+   "\"\\!\\(\\*RowBox[{\\\"Transpose\\\", \\\"[\\\", RowBox[{\\\"Lookup\\\", \
+\\\"[\\\", RowBox[{\\\"kPointInfo\\\", \\\",\\\", \\\"\\\\\\\"band_energies\\\
+\\\\\"\\\"}], \\\"]\\\"}], \\\"]\\\"}]\\) is not a list of numbers or pairs \
+of numbers.\"",2,20,37,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.7059776368384085`*^9, 3.7059776501070375`*^9}, 
+   3.7059777366917715`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ListPlot","lpn",
+   "\"\\!\\(\\*RowBox[{\\\"Transpose\\\", \\\"[\\\", RowBox[{\\\"Lookup\\\", \
+\\\"[\\\", RowBox[{\\\"kPointInfo\\\", \\\",\\\", \\\"\\\\\\\"band_energies\\\
+\\\\\"\\\"}], \\\"]\\\"}], \\\"]\\\"}]\\) is not a list of numbers or pairs \
+of numbers.\"",2,20,38,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.7059776368384085`*^9, 3.7059776501070375`*^9}, 
+   3.705977736742828*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ListPlot","lpn",
+   "\"\\!\\(\\*RowBox[{\\\"Transpose\\\", \\\"[\\\", RowBox[{\\\"Lookup\\\", \
+\\\"[\\\", RowBox[{\\\"kPointInfo\\\", \\\",\\\", \\\"\\\\\\\"band_energies\\\
+\\\\\"\\\"}], \\\"]\\\"}], \\\"]\\\"}]\\) is not a list of numbers or pairs \
+of numbers.\"",2,20,39,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.7059776368384085`*^9, 3.7059776501070375`*^9}, 
+   3.7059777367888603`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"ListPlot\\\", \
+\\\"::\\\", \\\"lpn\\\"}], \\\"MessageName\\\"]\\) will be suppressed during \
+this calculation.\"",2,20,40,19737071019126739112,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.7059776368384085`*^9, 3.7059776501070375`*^9}, 
+   3.7059777368083773`*^9}],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"Transpose", "[", 
+    RowBox[{"Lookup", "[", 
+     RowBox[{"kPointInfo", ",", "\<\"band_energies\"\>"}], "]"}], "]"}], ",", 
+   RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"None", ",", 
+      TagBox["eV",
+       HoldForm]}], "}"}]}], ",", 
+   RowBox[{"PlotLabel", "\[Rule]", "\<\"Band energies in eV\"\>"}], ",", 
+   RowBox[{"GridLines", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"11", ",", "24"}], "}"}]}]}], "]"}]], "Output",
+ CellChangeTimes->{{3.7059776370351706`*^9, 3.7059776502696133`*^9}, 
+   3.705977736851926*^9}]
+}, Open  ]]
 },
 WindowSize->{1366, 725},
 WindowMargins->{{-8, Automatic}, {Automatic, -8}},
@@ -2410,63 +715,100 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 401, 8, 30, "Input"],
-Cell[984, 32, 39244, 927, 1342, "Output"]
+Cell[580, 22, 455, 9, 30, "Input"],
+Cell[1038, 33, 244, 6, 21, "Message"],
+Cell[1285, 41, 277, 4, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[40265, 964, 266, 5, 30, "Input"],
-Cell[40534, 971, 11597, 324, 392, "Output"]
+Cell[1599, 50, 266, 5, 30, "Input"],
+Cell[1868, 57, 280, 6, 21, "Message"],
+Cell[2151, 65, 231, 4, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[52168, 1300, 340, 7, 30, "Input"],
-Cell[52511, 1309, 3372, 93, 126, "Output"]
+Cell[2419, 74, 340, 7, 30, "Input"],
+Cell[2762, 83, 421, 8, 21, "Message"],
+Cell[3186, 93, 403, 8, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[55920, 1407, 436, 6, 30, "Input"],
-Cell[56359, 1415, 3287, 85, 164, "Output"]
+Cell[3626, 106, 436, 6, 30, "Input"],
+Cell[4065, 114, 419, 8, 21, "Message"],
+Cell[4487, 124, 494, 10, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[59683, 1505, 288, 6, 30, "Input"],
-Cell[59974, 1513, 3862, 108, 145, "Output"]
+Cell[5018, 139, 288, 6, 30, "Input"],
+Cell[5309, 147, 420, 8, 21, "Message"],
+Cell[5732, 157, 324, 7, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[63873, 1626, 291, 4, 30, "Input"],
-Cell[64167, 1632, 3680, 97, 164, "Output"]
+Cell[6093, 169, 291, 4, 30, "Input"],
+Cell[6387, 175, 386, 8, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[67884, 1734, 293, 6, 30, "Input"],
-Cell[68180, 1742, 5428, 149, 183, "Output"]
+Cell[6810, 188, 293, 6, 30, "Input"],
+Cell[7106, 196, 421, 8, 21, "Message"],
+Cell[7530, 206, 459, 9, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[73645, 1896, 307, 5, 30, "Input"],
-Cell[73955, 1903, 4914, 125, 183, "Output"]
+Cell[8026, 220, 307, 5, 30, "Input"],
+Cell[8336, 227, 387, 8, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[78906, 2033, 930, 18, 30, "Input"],
-Cell[79839, 2053, 3955, 76, 263, "Output"]
+Cell[8760, 240, 930, 18, 30, "Input"],
+Cell[9693, 260, 543, 10, 21, "Message"],
+Cell[10239, 272, 543, 10, 21, "Message"],
+Cell[10785, 284, 543, 10, 21, "Message"],
+Cell[11331, 296, 340, 7, 21, "Message"],
+Cell[11674, 305, 733, 20, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[83831, 2134, 698, 15, 30, "Input"],
-Cell[84532, 2151, 4200, 80, 263, "Output"]
+Cell[12444, 330, 698, 15, 30, "Input"],
+Cell[13145, 347, 542, 10, 21, "Message"],
+Cell[13690, 359, 544, 10, 21, "Message"],
+Cell[14237, 371, 541, 10, 21, "Message"],
+Cell[14781, 383, 340, 7, 21, "Message"],
+Cell[15124, 392, 688, 20, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[88769, 2236, 701, 15, 30, "Input"],
-Cell[89473, 2253, 5062, 92, 263, "Output"]
+Cell[15849, 417, 701, 15, 30, "Input"],
+Cell[16553, 434, 541, 10, 21, "Message"],
+Cell[17097, 446, 544, 10, 21, "Message"],
+Cell[17644, 458, 544, 10, 21, "Message"],
+Cell[18191, 470, 342, 7, 21, "Message"],
+Cell[18536, 479, 807, 21, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[94572, 2350, 239, 5, 30, "Input"],
-Cell[94814, 2357, 147, 2, 30, "Output"]
+Cell[19380, 505, 239, 5, 30, "Input"],
+Cell[19622, 512, 335, 8, 21, "Message"],
+Cell[19960, 522, 350, 8, 21, "Message"],
+Cell[20313, 532, 100, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[94998, 2364, 239, 5, 30, "Input"],
-Cell[95240, 2371, 145, 2, 30, "Output"]
+Cell[20450, 538, 239, 5, 30, "Input"],
+Cell[20692, 545, 338, 8, 21, "Message"],
+Cell[21033, 555, 352, 8, 21, "Message"],
+Cell[21388, 565, 100, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[95422, 2378, 249, 5, 30, "Input"],
-Cell[95674, 2385, 157, 2, 87, "Output"]
+Cell[21525, 571, 249, 5, 30, "Input"],
+Cell[21777, 578, 336, 8, 21, "Message"],
+Cell[22116, 588, 358, 8, 21, "Message"],
+Cell[22477, 598, 100, 1, 30, "Output"]
 }, Open  ]],
-Cell[95846, 2390, 193, 3, 30, "Input"]
+Cell[CellGroupData[{
+Cell[22614, 604, 173, 3, 30, "Input"],
+Cell[22790, 609, 220, 5, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23047, 619, 780, 16, 50, "Input"],
+Cell[23830, 637, 477, 9, 21, "Message"],
+Cell[24310, 648, 475, 9, 21, "Message"],
+Cell[24788, 659, 477, 9, 21, "Message"],
+Cell[25268, 670, 396, 8, 21, "Message"],
+Cell[25667, 680, 656, 17, 63, "Output"]
+}, Open  ]]
 }
 ]
 *)
+
+(* End of internal cache information *)
 
