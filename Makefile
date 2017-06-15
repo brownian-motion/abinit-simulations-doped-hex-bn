@@ -19,11 +19,16 @@ PATH_TO_DEN_PARSER?=~/bin/spacedToCSV.jar
 
 TEMPFILE:=$(shell mktemp)
 
-all: band
+all: charge
 
+# Optimize the geometry to get the best value for acell
 geom: graphite_geom.out #so it just checks the version/timestamp of tbase1_1.out relative to tbase1_x.files
 
-band: graphite_band.out graphite_band_out.generic_DS2_band_eigen_energy.json graphite_band_out.generic_DS1_3d_indexed.csv
+# Make a .json file describing the band energy, to view with a plotting tool like Mathematica or MATLAB
+band: graphite_band.out graphite_band_out.generic_DS2_band_eigen_energy.json
+
+# Make an .xsf file for the charge density of the lattice, to view in XCrysDen or VESTA
+charge: graphite_band.out graphite_band_out.generic_DS1.xsf
 
 %.out: %.files %.in  #runs the test iff tbase%_x.out is older than tbase%_x.in or missing
 	$(ABINIT_MAIN_DIR_PATH)/abinit < $< $(LOG_OUTPUT_OPERATOR) $(LOG_FILE)
@@ -50,8 +55,21 @@ band: graphite_band.out graphite_band_out.generic_DS2_band_eigen_energy.json gra
 	echo 0 >> $(TEMPFILE)   # Close cut3d
 	$(ABINIT_MAIN_DIR_PATH)/cut3d < $(TEMPFILE)
 
+# For use with arbitrary plotting tools, like MATLAB or Mathematica
 %_3d_indexed.csv: %_3d_indexed.dat
 	java -jar $(PATH_TO_DEN_PARSER) -in $< -out $@
+
+# For use with files like XCrysDen or VESTA
+%.xsf: %_DEN
+	# cut3d only reads instructions from stdin, not arguments
+	# Make only can handle single lines of text
+	# So we use a temporary file to hold the text sent to cut3d
+	echo $< > $(TEMPFILE)   # Tell cut3d which file to analyze
+	echo 9 >> $(TEMPFILE)   # Tell cut3d to output xsf file format
+	echo $@ >> $(TEMPFILE)  # Tell cut3d the output file
+	echo "n" >> $(TEMPFILE) # Tell cut3d not to shift the axes
+	echo 0 >> $(TEMPFILE)   # Close cut3d
+	$(ABINIT_MAIN_DIR_PATH)/cut3d < $(TEMPFILE)	
 
 clean: cleanLog cleanTemp cleanOutput
 
