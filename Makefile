@@ -6,29 +6,49 @@ else
 LOG_OUTPUT_OPERATOR=|& tee
 endif
 
+# Setting up paths to Abinit
 ABINIT_DIR_PATH?=~/abinit
 PSEUDO_POTENTIALS_DIR=$(ABINIT_DIR_PATH)/tests/Psps_for_tests
 ABINIT_MAIN_DIR_PATH=$(ABINIT_DIR_PATH)/src/98_main
 
+# Carbon pseudopotential files
 CARBON_LDA_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/6c_lda.paw
 DEFAULT_CARBON_PSEUDO=$(CARBON_LDA_PSEUDO)
+
+# Boron pseudopotential files
+BORON_Q3_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/B-q3
+BORON_HGH_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/5b.3.hgh
+DEFAULT_BORON_PSEUDO=$(BORON_HGH_PSEUDO)
+
+# Nitrogen pseudopotential files
+NITROGEN_MOD_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/7n.1s.psp_mod
+NITROGEN_PAW_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/7n.paw
+NITROGEN_HGH_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/7n.psphgh
+NITROGEN_NC_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/7n.pspnc
+DEFAULT_NITROGEN_PSEUDO=$(NITROGEN_HGH_PSEUDO)
+
+# Applying default settings if not user-defined
+BORON_PSEUDO?=$(DEFAULT_BORON_PSEUDO)
+NITROGEN_PSEUDO?=$(DEFAULT_NITROGEN_PSEUDO)
 CARBON_PSEUDO?=$(DEFAULT_CARBON_PSEUDO)
 
+# Setting up paths to the automated parsing scripts
 PATH_TO_EIG_PARSER?=~/bin/parse_band_eigenvalues.py
 PATH_TO_DEN_PARSER?=~/bin/spacedToCSV.jar
 
 TEMPFILE:=$(shell mktemp)
 
-all: charge
+# default recipe. Will change frequently
+all: geom
 
 # Optimize the geometry to get the best value for acell
-geom: graphite_geom.out #so it just checks the version/timestamp of tbase1_1.out relative to tbase1_x.files
+geom: hexBN_geom.out
 
 # Make a .json file describing the band energy, to view with a plotting tool like Mathematica or MATLAB
-band: graphite_band.out graphite_band_out.generic_DS2_band_eigen_energy.json
+band: hexBN_analysis.out grahexBN_analysis_out.generic_DS2_band_eigen_energy.json
 
 # Make an .xsf file for the charge density of the lattice, to view in XCrysDen or VESTA
-charge: graphite_band.out graphite_band_out.generic_DS1.xsf
+charge: hexBN_analysis.out hexBN_analysis_out.generic_DS1.xsf
 
 %.out: %.files %.in  #runs the test iff tbase%_x.out is older than tbase%_x.in or missing
 	$(ABINIT_MAIN_DIR_PATH)/abinit < $< $(LOG_OUTPUT_OPERATOR) $(LOG_FILE)
@@ -40,6 +60,8 @@ charge: graphite_band.out graphite_band_out.generic_DS1.xsf
 	echo $*_in.generic >> $@
 	echo $*_out.generic >> $@
 	echo $*.generic >> $@
+	echo $(BORON_PSEUDO) >> $@
+	echo $(NITROGEN_PSEUDO) >> $@
 	echo $(CARBON_PSEUDO) >> $@
 
 %_band_eigen_energy.json: %_EIG
