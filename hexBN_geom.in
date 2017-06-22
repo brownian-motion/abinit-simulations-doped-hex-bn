@@ -1,7 +1,7 @@
 ### undoped hexagonal Boron Nitride - Optimizing geometry
 
 #Unit grid
-acell      3*5.1053478 # In Bohr radii ; scaling for primitive vectors
+acell      3*5.1333482788 # In Bohr radii ; scaling for primitive vectors
                           # @see Cooper, 2012 for initial 1.42 Angstrom spacing used
 angdeg     # Point to two C atoms and z-axis using degrees to form rhombus cell:
            90  90  60   # http://www.abinit.org/doc/helpfiles/for-v7.8/input_variables/varbas.html#angdeg

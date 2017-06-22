@@ -1,4 +1,4 @@
-### Modelling single-layer graphite
+### Modelling single-layer hexagonal boron-nitride
 # TODO: setup the experiment for single-layer Carbon
 # TODO: setup Carbon pseudopotentials
 
@@ -12,15 +12,15 @@ ecut       16.0         # in Ha. 4 Ha ≈108 eV
 ngkpt      6 6 1
 
 #Unit cell
-acell      3*5.1053478  # In Bohr radii
+acell      3*5.1333482788  # In Bohr radii
 angdeg     # Point to two C atoms and z-axis using degrees to form rhombus cell:
            90  90  60   # http://www.abinit.org/doc/helpfiles/for-v7.8/input_variables/varbas.html#angdeg
          
 #atom types and locations
 natom      2
-ntypat     1
-typat      1 1
-znucl      6             # Carbon
+ntypat     2
+typat      1 2
+znucl      5 7           # Boron at origin, Nitrogen in cell
 xred       0    0    1/2 # In reduced coordinates
            2/3  2/3  1/2  
 

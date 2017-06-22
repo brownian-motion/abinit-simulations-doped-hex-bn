@@ -33,8 +33,9 @@ NITROGEN_PSEUDO?=$(DEFAULT_NITROGEN_PSEUDO)
 CARBON_PSEUDO?=$(DEFAULT_CARBON_PSEUDO)
 
 # Setting up paths to the automated parsing scripts
-PATH_TO_EIG_PARSER?=~/bin/parse_band_eigenvalues.py
+PATH_TO_EIG_PARSER?=~/bin/abinit_parse_tools/parse_band_eigenvalues.py
 PATH_TO_DEN_PARSER?=~/bin/spacedToCSV.jar
+PATH_TO_EIG_GRAPHER?=~/bin/abinit_parse_tools/graph_band_eigenvalues.py
 
 TEMPFILE:=$(shell mktemp)
 
@@ -45,7 +46,7 @@ all: geom
 geom: hexBN_geom.out
 
 # Make a .json file describing the band energy, to view with a plotting tool like Mathematica or MATLAB
-band: hexBN_analysis.out grahexBN_analysis_out.generic_DS2_band_eigen_energy.json
+band: hexBN_analysis.out hexBN_analysis_out.generic_DS2_band_eigen_energy.json hexBN_analysis.out hexBN_analysis_out.generic_DS2_band_eigen_energy.svg
 
 # Make an .xsf file for the charge density of the lattice, to view in XCrysDen or VESTA
 charge: hexBN_analysis.out hexBN_analysis_out.generic_DS1.xsf
@@ -66,6 +67,9 @@ charge: hexBN_analysis.out hexBN_analysis_out.generic_DS1.xsf
 
 %_band_eigen_energy.json: %_EIG
 	python $(PATH_TO_EIG_PARSER) $^ > $@
+
+%_band_eigen_energy.svg: %_band_eigen_energy.json
+	python $(PATH_TO_EIG_GRAPHER) $^ > $@
 
 %_3d_indexed.dat: %_DEN
 	# cut3d only reads instructions from stdin, not arguments
