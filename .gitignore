@@ -6,4 +6,5 @@ log
 *.csv
 *.dat
 *.json
+!*.abinit.json
 *.xsf
