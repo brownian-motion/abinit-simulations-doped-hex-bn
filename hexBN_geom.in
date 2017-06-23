@@ -1,7 +1,7 @@
 ### undoped hexagonal Boron Nitride - Optimizing geometry
 
 #Unit grid
-acell      3*5.1333482788 # In Bohr radii ; scaling for primitive vectors
+acell      5.3178092090E+00  5.3178092090E+00  3.1078015284E+01 # In Bohr radii ; scaling for primitive vectors
                           # @see Cooper, 2012 for initial 1.42 Angstrom spacing used
 angdeg     # Point to two C atoms and z-axis using degrees to form rhombus cell:
            90  90  60   # http://www.abinit.org/doc/helpfiles/for-v7.8/input_variables/varbas.html#angdeg
@@ -32,7 +32,7 @@ nband 8
 
 #optimzation
 ecut       4.0           # Max E_kinetic, in Ha (4 Ha ≈ 100 eV)
-optcell    1             # Can change volume, keep shape
+optcell    9             # Can a1, a2, keep shape and a3
 ionmov     2             # Movement method
 ecutsm     0.5           # Smoothing of energy curve; 0.5 is recomended
 ntime      20            # take up to n steps to optimize

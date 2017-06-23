@@ -12,7 +12,7 @@ ecut       16.0         # in Ha. 4 Ha ≈108 eV
 ngkpt      6 6 1
 
 #Unit cell
-acell      3*5.1333482788  # In Bohr radii
+acell      5.3178092090E+00  5.3178092090E+00  3.1078015284E+01  # In Bohr radii
 angdeg     # Point to two C atoms and z-axis using degrees to form rhombus cell:
            90  90  60   # http://www.abinit.org/doc/helpfiles/for-v7.8/input_variables/varbas.html#angdeg
          
