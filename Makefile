@@ -33,10 +33,11 @@ NITROGEN_PSEUDO?=$(DEFAULT_NITROGEN_PSEUDO)
 CARBON_PSEUDO?=$(DEFAULT_CARBON_PSEUDO)
 
 # Setting up paths to the automated parsing scripts
-PATH_TO_EIG_PARSER?=~/bin/abinit_parse_tools/parse_band_eigenvalues.py
+DEFAULT_TOOLS_PATH?=~/bin/abinit_parse_tools
+PATH_TO_EIG_PARSER?=$(DEFAULT_TOOLS_PATH)/parse_band_eigenvalues.py
 PATH_TO_DEN_PARSER?=~/bin/spacedToCSV.jar
-PATH_TO_EIG_GRAPHER?=~/bin/abinit_parse_tools/graph_band_eigenvalues.py
-PATH_TO_ABINIT_INPUT_FILE_GENERATOR?=~/bin/abinit_parse_tools/generate_abinit_input_file_from_json.py
+PATH_TO_EIG_GRAPHER?=$(DEFAULT_TOOLS_PATH)/graph_band_eigenvalues.py
+PATH_TO_ABINIT_INPUT_FILE_GENERATOR?=$(DEFAULT_TOOLS_PATH)/generate_abinit_input_file_from_json.py
 
 TEMPFILE:=$(shell mktemp)
 
