@@ -21,8 +21,8 @@ natom      2
 ntypat     2
 typat      1 2
 znucl      5 7           # Boron at origin, Nitrogen in cell
-xred       0    0    1/2 # In reduced coordinates
-           2/3  2/3  1/2  
+xred       0    0    0   # In reduced coordinates
+           2/3  2/3  0    
 
 
 #Dataset 1: usual SCF calculation
