@@ -26,7 +26,8 @@ xred       0    0    1/2 # In reduced coordinates
 
 
 #Dataset 1: usual SCF calculation
-prtden1    1
+prtden1    1               # Output charge density information, for the next set
+prtdos1    3               # Output state density information, for analysis
 # kptopt1    1             # Automatically generate k-points
 # shiftk1    0.5 0.5 0.0   # Recommended for rhombohedral axes. (Shift along z?)
 
