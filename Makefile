@@ -30,6 +30,8 @@ band: graphite_band.out graphite_band_out.generic_DS2_band_eigen_energy.json
 # Make an .xsf file for the charge density of the lattice, to view in XCrysDen or VESTA
 charge: graphite_band.out graphite_band_out.generic_DS1.xsf
 
+states: graphite_band.out
+
 %.out: %.files %.in  #runs the test iff tbase%_x.out is older than tbase%_x.in or missing
 	$(ABINIT_MAIN_DIR_PATH)/abinit < $< $(LOG_OUTPUT_OPERATOR) $(LOG_FILE)
 	
