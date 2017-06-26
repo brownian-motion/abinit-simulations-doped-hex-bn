@@ -38,6 +38,7 @@ PATH_TO_EIG_PARSER?=$(DEFAULT_TOOLS_PATH)/parse_band_eigenvalues.py
 PATH_TO_DEN_PARSER?=~/bin/spacedToCSV.jar
 PATH_TO_EIG_GRAPHER?=$(DEFAULT_TOOLS_PATH)/graph_band_eigenvalues.py
 PATH_TO_ABINIT_INPUT_FILE_GENERATOR?=$(DEFAULT_TOOLS_PATH)/generate_abinit_input_file_from_json.py
+PATH_TO_ABINIT_JSON_ATOM_GENERATOR?=$(DEFAULT_TOOLS_PATH)/convert_abinit_input_from_atoms_to_direct.py
 
 TEMPFILE:=$(shell mktemp)
 
@@ -54,7 +55,7 @@ band: hexBN_analysis.out hexBN_analysis_out.generic_DS2_band_eigen_energy.json h
 charge: hexBN_analysis.out hexBN_analysis_out.generic_DS1.xsf
 
 %.in: %.abinit.json
-	python $(PATH_TO_ABINIT_INPUT_FILE_GENERATOR) $^ > $@
+	python $(PATH_TO_ABINIT_JSON_ATOM_GENERATOR) $^ | python $(PATH_TO_ABINIT_INPUT_FILE_GENERATOR) > $@
 
 states: graphite_band.out
 
