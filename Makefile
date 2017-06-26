@@ -55,6 +55,8 @@ charge: hexBN_analysis.out hexBN_analysis_out.generic_DS1.xsf
 %.in: %.abinit.json
 	python $(PATH_TO_ABINIT_INPUT_FILE_GENERATOR) $^ > $@
 
+states: graphite_band.out
+
 %.out: %.files %.in  #runs the test iff tbase%_x.out is older than tbase%_x.in or missing
 	$(ABINIT_MAIN_DIR_PATH)/abinit < $< $(LOG_OUTPUT_OPERATOR) $(LOG_FILE)
 	
