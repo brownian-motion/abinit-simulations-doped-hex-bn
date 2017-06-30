@@ -26,145 +26,145 @@
                 }
             }, 
             {
+                "znucl": 7, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 3, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 3, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
+                "znucl": 5, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 1, 
+                            "numerator": 0
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
+                "znucl": 7, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 6, 
+                            "numerator": 5
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 3, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
+                "znucl": 5, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 1, 
+                            "numerator": 0
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
+                "znucl": 7, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 3, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 6, 
+                            "numerator": 5
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
+                "znucl": 5, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
                 "znucl": 6, 
-                "coord": {
-                    "coordinate_array": [
-                        {
-                            "_type": "fraction", 
-                            "denominator": 3, 
-                            "numerator": 1
-                        }, 
-                        {
-                            "_type": "fraction", 
-                            "denominator": 3, 
-                            "numerator": 1
-                        }, 
-                        {
-                            "_type": "fraction", 
-                            "denominator": 2, 
-                            "numerator": 1
-                        }
-                    ], 
-                    "coordinate_system": "unknown"
-                }
-            }, 
-            {
-                "znucl": 5, 
-                "coord": {
-                    "coordinate_array": [
-                        {
-                            "_type": "fraction", 
-                            "denominator": 2, 
-                            "numerator": 1
-                        }, 
-                        {
-                            "_type": "fraction", 
-                            "denominator": 1, 
-                            "numerator": 0
-                        }, 
-                        {
-                            "_type": "fraction", 
-                            "denominator": 2, 
-                            "numerator": 1
-                        }
-                    ], 
-                    "coordinate_system": "unknown"
-                }
-            }, 
-            {
-                "znucl": 7, 
-                "coord": {
-                    "coordinate_array": [
-                        {
-                            "_type": "fraction", 
-                            "denominator": 6, 
-                            "numerator": 5
-                        }, 
-                        {
-                            "_type": "fraction", 
-                            "denominator": 3, 
-                            "numerator": 1
-                        }, 
-                        {
-                            "_type": "fraction", 
-                            "denominator": 2, 
-                            "numerator": 1
-                        }
-                    ], 
-                    "coordinate_system": "unknown"
-                }
-            }, 
-            {
-                "znucl": 5, 
-                "coord": {
-                    "coordinate_array": [
-                        {
-                            "_type": "fraction", 
-                            "denominator": 1, 
-                            "numerator": 0
-                        }, 
-                        {
-                            "_type": "fraction", 
-                            "denominator": 2, 
-                            "numerator": 1
-                        }, 
-                        {
-                            "_type": "fraction", 
-                            "denominator": 2, 
-                            "numerator": 1
-                        }
-                    ], 
-                    "coordinate_system": "unknown"
-                }
-            }, 
-            {
-                "znucl": 7, 
-                "coord": {
-                    "coordinate_array": [
-                        {
-                            "_type": "fraction", 
-                            "denominator": 3, 
-                            "numerator": 1
-                        }, 
-                        {
-                            "_type": "fraction", 
-                            "denominator": 6, 
-                            "numerator": 5
-                        }, 
-                        {
-                            "_type": "fraction", 
-                            "denominator": 2, 
-                            "numerator": 1
-                        }
-                    ], 
-                    "coordinate_system": "unknown"
-                }
-            }, 
-            {
-                "znucl": 5, 
-                "coord": {
-                    "coordinate_array": [
-                        {
-                            "_type": "fraction", 
-                            "denominator": 2, 
-                            "numerator": 1
-                        }, 
-                        {
-                            "_type": "fraction", 
-                            "denominator": 2, 
-                            "numerator": 1
-                        }, 
-                        {
-                            "_type": "fraction", 
-                            "denominator": 2, 
-                            "numerator": 1
-                        }
-                    ], 
-                    "coordinate_system": "unknown"
-                }
-            }, 
-            {
-                "znucl": 7, 
                 "coord": {
                     "coordinate_array": [
                         {
