@@ -96,7 +96,12 @@
 		"name":"chksymbreak",
 		"value":0,
 		"comment":"ignore complaints about symmetry of k-point array"
-	}
+	},
+        {
+            "comment":"required for all PAW computations\nFor ~15Ha ecut, 40Ha is recommended",
+            "name":"pawecutdg",
+            "value":40
+        }
 	],
 	"meta":{
 		"atoms":[

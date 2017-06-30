@@ -17,7 +17,7 @@ DEFAULT_CARBON_PSEUDO=$(CARBON_LDA_PAW_PSEUDO)
 
 # Boron pseudopotential files
 # Boron PAW LDA from http://users.wfu.edu/natalie/papers/pwpaw/periodictable/atoms/B/ 2017-06-30
-BORON_PAW_LDA_PSEUDO=./B_LDA_abinit
+BORON_PAW_LDA_PSEUDO=$(shell pwd)/B_LDA_abinit
 BORON_Q3_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/B-q3
 BORON_HGH_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/5b.3.hgh
 DEFAULT_BORON_PSEUDO=$(BORON_PAW_LDA_PSEUDO)

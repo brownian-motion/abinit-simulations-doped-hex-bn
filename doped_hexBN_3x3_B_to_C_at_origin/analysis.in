@@ -1,0 +1,138 @@
+### Modelling single-layer hexagonal boron-nitride
+#
+#First run: stabilize the grid
+#Second run: non-self-consistent analysis
+ndtset   2
+
+#in Ha. 4 Ha ≈108 eV
+ecut     16.0
+
+ngkpt    6 6 1
+
+## Unit cell
+# In Bohr radii
+acell    15.953427627  15.953427627  93.234045852
+
+#Point to two C atoms and z-axis using degrees to form rhombus cell:
+angdeg   90  90  60
+
+## Dataset 1: usual SCF calculation
+
+prtden1  1
+
+#kptopt1    1             # Automatically generate k-points
+#shiftk1    0.5 0.5 0.0   # Recommended for rhombohedral axes. (Shift along z?)
+
+#Max SCF Cycles
+nstep1   10
+
+#delta(E_total) threshold (after twice) e-6 for rough values, 10 for more detail, 12 is pro
+toldfe1  1.0d-10
+
+## Dataset 2: Computing band structure
+
+#second run: not selfconsistent
+iscf2    -2
+
+#2nd gets density from 1st
+getden2  -1
+
+#10 bands (8 good, 2 buffer)
+nband2   10
+
+#define 3 segments in Brillouin zone (why?)
+kptopt2  -3
+
+#making a circuit with 3 segments,
+#divided by the given number
+ndivk2   20  14  30
+
+#Γ M K Γ
+kptbounds2
+        0.0  0.0  0.0
+        0.5  0.0  0.0
+        0.66666666  0.33333333  0.0
+        0.0  0.0  0.0
+
+enunit2  1
+
+#Tolerance of <(H-E)^2> allowed for
+#non-self-consistent calculations.
+#Good data comes from 1d-12
+tolwfr2  1.0d-10
+
+#ignore complaints about symmetry of k-point array
+chksymbreak 0
+
+#required for all PAW computations
+#For ~15Ha ecut, 40Ha is recommended
+pawecutdg 40
+
+#This field was automatically generated
+natom    54
+
+#This field was automatically generated
+ntypat   3
+
+#This field was automatically generated
+znucl    5  6  7
+
+#This field was automatically generated
+typat    1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  2  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3
+
+#This field was automatically generated
+xred
+        1/3  0  1/6
+        2/3  0  1/6
+        0  1/3  1/6
+        1/3  1/3  1/6
+        2/3  1/3  1/6
+        0  2/3  1/6
+        1/3  2/3  1/6
+        2/3  2/3  1/6
+        0  0  1/2
+        1/3  0  1/2
+        2/3  0  1/2
+        0  1/3  1/2
+        1/3  1/3  1/2
+        2/3  1/3  1/2
+        0  2/3  1/2
+        1/3  2/3  1/2
+        2/3  2/3  1/2
+        0  0  5/6
+        1/3  0  5/6
+        2/3  0  5/6
+        0  1/3  5/6
+        1/3  1/3  5/6
+        2/3  1/3  5/6
+        0  2/3  5/6
+        1/3  2/3  5/6
+        2/3  2/3  5/6
+        0  0  1/6
+        2/9  2/9  1/6
+        5/9  2/9  1/6
+        8/9  2/9  1/6
+        2/9  5/9  1/6
+        5/9  5/9  1/6
+        8/9  5/9  1/6
+        2/9  8/9  1/6
+        5/9  8/9  1/6
+        8/9  8/9  1/6
+        2/9  2/9  1/2
+        5/9  2/9  1/2
+        8/9  2/9  1/2
+        2/9  5/9  1/2
+        5/9  5/9  1/2
+        8/9  5/9  1/2
+        2/9  8/9  1/2
+        5/9  8/9  1/2
+        8/9  8/9  1/2
+        2/9  2/9  5/6
+        5/9  2/9  5/6
+        8/9  2/9  5/6
+        2/9  5/9  5/6
+        5/9  5/9  5/6
+        8/9  5/9  5/6
+        2/9  8/9  5/6
+        5/9  8/9  5/6
+        8/9  8/9  5/6

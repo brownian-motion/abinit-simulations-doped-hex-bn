@@ -1,0 +1,331 @@
+{
+    "meta": {
+        "repeat_cell": null, 
+        "atoms": [
+            {
+                "znucl": 6, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 1, 
+                            "numerator": 0
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 1, 
+                            "numerator": 0
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
+                "znucl": 7, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 3, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 3, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
+                "znucl": 5, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 1, 
+                            "numerator": 0
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
+                "znucl": 7, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 6, 
+                            "numerator": 5
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 3, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
+                "znucl": 5, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 1, 
+                            "numerator": 0
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
+                "znucl": 7, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 3, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 6, 
+                            "numerator": 5
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
+                "znucl": 5, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }, 
+            {
+                "znucl": 6, 
+                "coord": {
+                    "coordinate_array": [
+                        {
+                            "_type": "fraction", 
+                            "denominator": 6, 
+                            "numerator": 5
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 6, 
+                            "numerator": 5
+                        }, 
+                        {
+                            "_type": "fraction", 
+                            "denominator": 2, 
+                            "numerator": 1
+                        }
+                    ], 
+                    "coordinate_system": "unknown"
+                }
+            }
+        ]
+    }, 
+    "direct": [
+        {
+            "comment": "## Modelling single-layer hexagonal boron-nitride\n\nFirst run: stabilize the grid\nSecond run: non-self-consistent analysis", 
+            "name": "ndtset", 
+            "value": 2
+        }, 
+        {
+            "comment": "in Ha. 4 Ha \u2248108 eV", 
+            "name": "ecut", 
+            "value": "16.0"
+        }, 
+        {
+            "comment": null, 
+            "name": "ngkpt", 
+            "value": "6 6 1"
+        }, 
+        {
+            "comment": "# Unit cell\n In Bohr radii", 
+            "name": "acell", 
+            "value": [
+                10.635618418, 
+                10.635618418, 
+                31.078015283999999
+            ]
+        }, 
+        {
+            "comment": "Point to two C atoms and z-axis using degrees to form rhombus cell:", 
+            "name": "angdeg", 
+            "value": [
+                90, 
+                90, 
+                60
+            ]
+        }, 
+        {
+            "comment": "# Dataset 1: usual SCF calculation", 
+            "name": null, 
+            "value": null
+        }, 
+        {
+            "comment": null, 
+            "name": "prtden1", 
+            "value": "1"
+        }, 
+        {
+            "comment": "kptopt1    1             # Automatically generate k-points\nshiftk1    0.5 0.5 0.0   # Recommended for rhombohedral axes. (Shift along z?)", 
+            "name": null, 
+            "value": null
+        }, 
+        {
+            "comment": "Max SCF Cycles", 
+            "name": "nstep1", 
+            "value": 10
+        }, 
+        {
+            "comment": "delta(E_total) threshold (after twice) e-6 for rough values, 10 for more detail, 12 is pro", 
+            "name": "toldfe1", 
+            "value": "1.0d-10"
+        }, 
+        {
+            "comment": "# Dataset 2: Computing band structure", 
+            "name": null, 
+            "value": null
+        }, 
+        {
+            "comment": "second run: not selfconsistent", 
+            "name": "iscf2", 
+            "value": "-2"
+        }, 
+        {
+            "comment": "2nd gets density from 1st", 
+            "name": "getden2", 
+            "value": "-1"
+        }, 
+        {
+            "comment": "10 bands (8 good, 2 buffer)", 
+            "name": "nband2", 
+            "value": "10"
+        }, 
+        {
+            "comment": "define 3 segments in Brillouin zone (why?)", 
+            "name": "kptopt2", 
+            "value": "-3"
+        }, 
+        {
+            "comment": "making a circuit with 3 segments,\ndivided by the given number", 
+            "name": "ndivk2", 
+            "value": [
+                20, 
+                14, 
+                30
+            ]
+        }, 
+        {
+            "comment": "\u0393 M K \u0393", 
+            "name": "kptbounds2", 
+            "value": [
+                [
+                    0.0, 
+                    0.0, 
+                    0.0
+                ], 
+                [
+                    0.5, 
+                    0.0, 
+                    0.0
+                ], 
+                [
+                    0.66666665999999997, 
+                    0.33333332999999998, 
+                    0.0
+                ], 
+                [
+                    0.0, 
+                    0.0, 
+                    0.0
+                ]
+            ]
+        }, 
+        {
+            "comment": null, 
+            "name": "enunit2", 
+            "value": "1"
+        }, 
+        {
+            "comment": "Tolerance of <(H-E)^2> allowed for\nnon-self-consistent calculations.\nGood data comes from 1d-12", 
+            "name": "tolwfr2", 
+            "value": "1.0d-10"
+        }, 
+        {
+            "comment": "ignore complaints about symmetry of k-point array", 
+            "name": "chksymbreak", 
+            "value": 0
+        },
+        {
+            "comment":"required for all PAW computations\nFor ~15Ha ecut, 40Ha is recommended",
+            "name":"pawecutdg",
+            "value":40
+        }
+    ]
+}
