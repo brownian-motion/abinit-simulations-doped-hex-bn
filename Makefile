@@ -12,20 +12,22 @@ PSEUDO_POTENTIALS_DIR=$(ABINIT_DIR_PATH)/tests/Psps_for_tests
 ABINIT_MAIN_DIR_PATH=$(ABINIT_DIR_PATH)/src/98_main
 
 # Carbon pseudopotential files
-CARBON_LDA_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/6c_lda.paw
-DEFAULT_CARBON_PSEUDO=$(CARBON_LDA_PSEUDO)
+CARBON_LDA_PAW_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/6c_lda.paw
+DEFAULT_CARBON_PSEUDO=$(CARBON_LDA_PAW_PSEUDO)
 
 # Boron pseudopotential files
+# Boron PAW LDA from http://users.wfu.edu/natalie/papers/pwpaw/periodictable/atoms/B/ 2017-06-30
+BORON_PAW_LDA_PSEUDO=./B_LDA_abinit
 BORON_Q3_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/B-q3
 BORON_HGH_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/5b.3.hgh
-DEFAULT_BORON_PSEUDO=$(BORON_HGH_PSEUDO)
+DEFAULT_BORON_PSEUDO=$(BORON_PAW_LDA_PSEUDO)
 
 # Nitrogen pseudopotential files
 NITROGEN_MOD_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/7n.1s.psp_mod
 NITROGEN_PAW_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/7n.paw
 NITROGEN_HGH_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/7n.psphgh
 NITROGEN_NC_PSEUDO=$(PSEUDO_POTENTIALS_DIR)/7n.pspnc
-DEFAULT_NITROGEN_PSEUDO=$(NITROGEN_HGH_PSEUDO)
+DEFAULT_NITROGEN_PSEUDO=$(NITROGEN_PAW_PSEUDO)
 
 # Applying default settings if not user-defined
 BORON_PSEUDO?=$(DEFAULT_BORON_PSEUDO)
@@ -69,8 +71,8 @@ states: graphite_band.out
 	echo $*_out.generic >> $@
 	echo $*.generic >> $@
 	echo $(BORON_PSEUDO) >> $@
-	echo $(NITROGEN_PSEUDO) >> $@
 	echo $(CARBON_PSEUDO) >> $@
+	echo $(NITROGEN_PSEUDO) >> $@
 
 %_band_eigen_energy.json: %_EIG
 	python $(PATH_TO_EIG_PARSER) $^ > $@
