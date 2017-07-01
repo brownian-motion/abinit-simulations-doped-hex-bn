@@ -72,8 +72,11 @@ doped_cells/%_triangular/doped_cell.abinit.json: pure_cells/%.abinit.json doping
 	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR) > $@
 
 # 2-D repetitions of unit cell
-doped_cells/hexBN_(%,0)_triangular/pure_cell.abinit.json: pure_cells/hexBN_(1,0).abinit.json cell_repetition_patterns/%x%.abinit.json
+pure_cells/hexBN_%,0.abinit.json: pure_cells/hexBN_1,0.abinit.json cell_repetition_patterns/xy_%x.abinit.json
 	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR) > $@
+
+cell_repetition_patterns/xy_%x.abinit.json: 
+	echo "{ \"meta\": {\"repeat_cell\": [ $(*), $(*), 1 ] } }" > $@
 
 %.out: %.files %.in  #runs the test iff tbase%_x.out is older than tbase%_x.in or missing
 	$(ABINIT_MAIN_DIR_PATH)/abinit < $< $(LOG_OUTPUT_OPERATOR) $(LOG_FILE)
