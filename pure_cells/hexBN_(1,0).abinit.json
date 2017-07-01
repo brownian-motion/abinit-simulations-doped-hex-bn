@@ -1,0 +1,43 @@
+{
+  "direct": [
+    {
+      "comment": "# Unit cell for (doped) hexagonal Boron-Nitride"
+    },
+    {
+      "name": "ngkpt",
+      "value": [ 6, 6, 1 ]
+    },
+    {
+      "comment": "# Unit cell\n In Bohr radii",
+      "name": "acell",
+      "value": [ 5.3178092090, 5.3178092090, 31.078015284 ]
+    },
+    {
+      "comment": "Point to two atoms and z-axis using degrees to form rhombus cell:",
+      "name": "angdeg",
+      "value": [ 90, 90, 60 ]
+    }
+  ],
+  "meta": {
+    "atoms": [
+      {
+        "coord": [ 0, 0, 0.5 ],
+        "znucl": 5
+      },
+      {
+        "coord": [
+          {
+            "_type": "fraction",
+            "value": "2/3"
+          },
+          {
+            "_type": "fraction",
+            "value": "2/3"
+          },
+          0.5
+        ],
+        "znucl": 7
+      }
+    ]
+  }
+}

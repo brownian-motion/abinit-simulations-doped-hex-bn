@@ -41,6 +41,9 @@ PATH_TO_DEN_PARSER?=~/bin/spacedToCSV.jar
 PATH_TO_EIG_GRAPHER?=$(DEFAULT_TOOLS_PATH)/graph_band_eigenvalues.py
 PATH_TO_ABINIT_INPUT_FILE_GENERATOR?=$(DEFAULT_TOOLS_PATH)/generate_abinit_input_file_from_json.py
 PATH_TO_ABINIT_JSON_ATOM_GENERATOR?=$(DEFAULT_TOOLS_PATH)/convert_abinit_input_from_atoms_to_direct.py
+PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/repeat_cell.py
+PATH_TO_ABINIT_JSON_MERGER?=$(DEFAULT_TOOLS_PATH)/merge.py
+PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/dope_cell.py
 
 TEMPFILE:=$(shell mktemp)
 
@@ -60,6 +63,17 @@ charge: hexBN_analysis.out hexBN_analysis_out.generic_DS1.xsf
 	python $(PATH_TO_ABINIT_JSON_ATOM_GENERATOR) $^ | python $(PATH_TO_ABINIT_INPUT_FILE_GENERATOR) > $@
 
 states: graphite_band.out
+
+doped_cells/%/formation_energy.abinit.json: doped_cells/%/doped_cell.abinit.json experiment_templates/formation_energy.abinit.json
+	python $(PATH_TO_ABINIT_JSON_MERGER) $^ > $@
+
+# dopings
+doped_cells/%_triangular/doped_cell.abinit.json: pure_cells/%.abinit.json doping_patterns/triangular.abinit.json
+	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR) > $@
+
+# 2-D repetitions of unit cell
+doped_cells/hexBN_(%,0)_triangular/pure_cell.abinit.json: pure_cells/hexBN_(1,0).abinit.json cell_repetition_patterns/%x%.abinit.json
+	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR) > $@
 
 %.out: %.files %.in  #runs the test iff tbase%_x.out is older than tbase%_x.in or missing
 	$(ABINIT_MAIN_DIR_PATH)/abinit < $< $(LOG_OUTPUT_OPERATOR) $(LOG_FILE)

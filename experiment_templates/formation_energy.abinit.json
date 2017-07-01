@@ -1,0 +1,70 @@
+{
+  "direct": [
+    {
+      "comment": "## Identifying formation energy of cell"
+    },
+    {
+      "comment": "# Optimize atom positions, then print energy and density info"
+    },
+    {
+      "name": "ecut",
+      "value": 16.0,
+      "comment": "Max E_kinetic, in Ha (4 Ha ≈ 100 eV)"
+    },
+    {
+      "name": "ionmov",
+      "value": 2,
+      "comment": "Ion movement method:\n  Broyden-Fletcher-Goldfarb-Shanno minimization (BFGS)\n  Good for 10 degrees of freedom"
+    },
+    {
+      "name": "ecutsm",
+      "value": 0.5,
+      "comment": "Smoothing of energy curve; 0.5 is recomended"
+    },
+    {
+      "name": "ntime",
+      "value": 20,
+      "comment": "take up to n steps to optimize"
+    },
+    {
+      "name": "dilatmx",
+      "value": 1.05,
+      "comment": "try plane waves up to this amount larger\n##Maybe unnecessary?"
+    },
+    {
+      "name": "toldfe",
+      "value": "1.0d-10",
+      "comment": "Delta E_tot tolerance (satisfied twice)"
+    },
+    {
+      "name": "ecut",
+      "value": "16.0",
+      "comment": "in Ha. 4 Ha ≈108 eV"
+    },
+    {
+      "name": "prtden",
+      "comment": "Output a density file",
+      "value": "1"
+    },
+    {
+      "name": "nstep",
+      "value": 10,
+      "comment": "Max SCF Cycles"
+    },
+    {
+      "name": "toldfe",
+      "value": "1.0d-10",
+      "comment": "delta(E_total) threshold (after twice) e-6 for rough values, 10 for more detail, 12 is pro"
+    },
+    {
+      "name": "chksymbreak",
+      "value": 0,
+      "comment": "ignore complaints about symmetry of k-point array"
+    },
+    {
+      "comment": "required for all PAW computations\nFor ~15Ha ecut, 40Ha is recommended",
+      "name": "pawecutdg",
+      "value": 40
+    }
+  ]
+}
