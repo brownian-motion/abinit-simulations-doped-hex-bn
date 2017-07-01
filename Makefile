@@ -1,5 +1,10 @@
 LOG_FILE?=log
 
+# Can be used like $(dir_guard) to ensure directory existence in a rule.
+WIN_dir_guard=mkdir $(@D)
+UNIX_dir_guard=mkdir -p $(@D)
+dir_guard=$(WIN_dir_guard)
+
 ifndef VERBOSE
 LOG_OUTPUT_OPERATOR=>&
 else
@@ -47,6 +52,13 @@ PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/dope_cell.py
 
 TEMPFILE:=$(shell mktemp)
 
+DOPED_CELLS_DIR:=doped_cells
+PURE_CELLS_DIR:=pure_cells
+CELL_REPETION_DIR:=cell_repetition_patterns
+EXPERIMENT_TEMPLATE_DIR:=experiment_templates
+DOPING_PATTERN_DIR:=doping_patterns
+
+
 # default recipe. Will change frequently
 all: geom
 
@@ -64,18 +76,22 @@ charge: hexBN_analysis.out hexBN_analysis_out.generic_DS1.xsf
 
 states: graphite_band.out
 
-doped_cells/%/formation_energy.abinit.json: doped_cells/%/doped_cell.abinit.json experiment_templates/formation_energy.abinit.json
+$(DOPED_CELLS_DIR)/%/formation_energy.abinit.json: $(DOPED_CELLS_DIR)/%/doped_cell.abinit.json $(EXPERIMENT_TEMPLATE_DIR)/formation_energy.abinit.json
+	$(dir_guard)
 	python $(PATH_TO_ABINIT_JSON_MERGER) $^ > $@
 
 # dopings
-doped_cells/%_triangular/doped_cell.abinit.json: pure_cells/%.abinit.json doping_patterns/triangular.abinit.json
+$(DOPED_CELLS_DIR)/%_triangular/doped_cell.abinit.json: $(PURE_CELLS_DIR)/%.abinit.json $(DOPING_PATTERN_DIR)/triangular.abinit.json
+	$(dir_guard)
 	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR) > $@
 
 # 2-D repetitions of unit cell
-pure_cells/hexBN_%,0.abinit.json: pure_cells/hexBN_1,0.abinit.json cell_repetition_patterns/xy_%x.abinit.json
+$(PURE_CELLS_DIR)/hexBN_%,0.abinit.json: $(PURE_CELLS_DIR)/hexBN_1,0.abinit.json $(CELL_REPETION_DIR)/xy_%x.abinit.json
+	$(dir_guard)
 	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR) > $@
 
-cell_repetition_patterns/xy_%x.abinit.json: 
+$(CELL_REPETION_DIR)/xy_%x.abinit.json:
+	$(dir_guard)
 	echo "{ \"meta\": {\"repeat_cell\": [ $(*), $(*), 1 ] } }" > $@
 
 %.out: %.files %.in  #runs the test iff tbase%_x.out is older than tbase%_x.in or missing
