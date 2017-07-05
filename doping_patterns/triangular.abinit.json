@@ -3,7 +3,7 @@
 		"dopings":[
 			{
 				"znucl": 6,
-				"coord": [0, 0, 0]
+				"coord": [0, 0, 0.5]
 			}
 		]
 	}
