@@ -32,16 +32,6 @@
       "comment": "try plane waves up to this amount larger\n##Maybe unnecessary?"
     },
     {
-      "name": "toldfe",
-      "value": "1.0d-10",
-      "comment": "Delta E_tot tolerance (satisfied twice)"
-    },
-    {
-      "name": "ecut",
-      "value": "16.0",
-      "comment": "in Ha. 4 Ha ≈108 eV"
-    },
-    {
       "name": "prtden",
       "comment": "Output a density file",
       "value": "1"
