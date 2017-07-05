@@ -49,6 +49,7 @@ PATH_TO_ABINIT_JSON_ATOM_GENERATOR?=$(DEFAULT_TOOLS_PATH)/convert_abinit_input_f
 PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/repeat_atoms_in_cell.py
 PATH_TO_ABINIT_JSON_MERGER?=$(DEFAULT_TOOLS_PATH)/merge.py
 PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/dope_cell.py
+PATH_TO_ABINIT_JSON_CHIRAL_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/generate_2D_chiral_cell.py
 
 TEMPFILE:=$(shell mktemp)
 
@@ -57,6 +58,7 @@ PURE_CELLS_DIR:=pure_cells
 CELL_REPETION_DIR:=cell_repetition_patterns
 EXPERIMENT_TEMPLATE_DIR:=experiment_templates
 DOPING_PATTERN_DIR:=doping_patterns
+CHIRALITY_PATTERN_DIR:=chiral_cell_patterns
 
 
 # default recipe. Will change frequently
@@ -91,13 +93,23 @@ $(DOPED_CELLS_DIR)/%_honeycomb/doped_cell.abinit.json: $(PURE_CELLS_DIR)/%.abini
 
 
 # 2-D repetitions of unit cell
+# This is important because chiral atom positions are inaccurate, and may drop ones near axes
 $(PURE_CELLS_DIR)/hexBN_%,0.abinit.json: $(PURE_CELLS_DIR)/hexBN_1,0.abinit.json $(CELL_REPETION_DIR)/xy_%x.abinit.json
-	# $(dir_guard)
+	$(dir_guard)
 	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR) > $@
+
+# 2-D chiral tesselation of unit cell
+$(PURE_CELLS_DIR)/hexBN_%.abinit.json: $(PURE_CELLS_DIR)/hexBN_1,0.abinit.json $(CHIRALITY_PATTERN_DIR)/%.abinit.json
+	$(dir_guard)
+	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_CHIRAL_CELL_GENERATOR) > $@
 
 $(CELL_REPETION_DIR)/xy_%x.abinit.json:
 	$(dir_guard)
 	echo "{ \"meta\": {\"repeat_cell\": [ $(*), $(*), 1 ] } }" > $@
+
+$(CHIRALITY_PATTERN_DIR)/%.abinit.json:
+	$(dir_guard)
+	echo "{ \"meta\": {\"make_chirality\": [ $(*) ] } }" > $@
 
 %.out: %.in %.files  #runs the test iff tbase%_x.out is older than tbase%_x.in or missing
 	$(ABINIT_MAIN_DIR_PATH)/abinit < $(*).files $(LOG_OUTPUT_OPERATOR) $(LOG_FILE)
