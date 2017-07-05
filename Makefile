@@ -1,7 +1,7 @@
 LOG_FILE?=log
 
 # Can be used like $(dir_guard) to ensure directory existence in a rule.
-WIN_dir_guard=mkdir $(@D)
+WIN_dir_guard=mkdir -p $(@D)
 UNIX_dir_guard=mkdir -p $(@D)
 dir_guard=$(WIN_dir_guard)
 
@@ -46,7 +46,7 @@ PATH_TO_DEN_PARSER?=~/bin/spacedToCSV.jar
 PATH_TO_EIG_GRAPHER?=$(DEFAULT_TOOLS_PATH)/graph_band_eigenvalues.py
 PATH_TO_ABINIT_INPUT_FILE_GENERATOR?=$(DEFAULT_TOOLS_PATH)/generate_abinit_input_file_from_json.py
 PATH_TO_ABINIT_JSON_ATOM_GENERATOR?=$(DEFAULT_TOOLS_PATH)/convert_abinit_input_from_atoms_to_direct.py
-PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/repeat_cell.py
+PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/repeat_atoms_in_cell.py
 PATH_TO_ABINIT_JSON_MERGER?=$(DEFAULT_TOOLS_PATH)/merge.py
 PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/dope_cell.py
 
@@ -85,13 +85,18 @@ $(DOPED_CELLS_DIR)/%_triangular/doped_cell.abinit.json: $(PURE_CELLS_DIR)/%.abin
 	$(dir_guard)
 	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR) > $@
 
+$(DOPED_CELLS_DIR)/%_honeycomb/doped_cell.abinit.json: $(PURE_CELLS_DIR)/%.abinit.json $(DOPING_PATTERN_DIR)/honeycomb.abinit.json
+	$(dir_guard)
+	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR) > $@
+
+
 # 2-D repetitions of unit cell
 $(PURE_CELLS_DIR)/hexBN_%,0.abinit.json: $(PURE_CELLS_DIR)/hexBN_1,0.abinit.json $(CELL_REPETION_DIR)/xy_%x.abinit.json
-	$(dir_guard)
+	# $(dir_guard)
 	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR) > $@
 
 $(CELL_REPETION_DIR)/xy_%x.abinit.json:
-	$(dir_guard)
+	# $(dir_guard)
 	echo "{ \"meta\": {\"repeat_cell\": [ $(*), $(*), 1 ] } }" > $@
 
 %.out: %.files %.in  #runs the test iff tbase%_x.out is older than tbase%_x.in or missing
