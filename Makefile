@@ -74,7 +74,8 @@ band: hexBN_analysis.out hexBN_analysis_out.generic_DS2_band_eigen_energy.json h
 charge: hexBN_analysis.out hexBN_analysis_out.generic_DS1.xsf
 
 %.in: %.abinit.json
-	python $(PATH_TO_ABINIT_JSON_ATOM_GENERATOR) $^ | python $(PATH_TO_ABINIT_INPUT_FILE_GENERATOR) > $@
+	python $(PATH_TO_ABINIT_JSON_ATOM_GENERATOR) $^
+	python $(PATH_TO_ABINIT_INPUT_FILE_GENERATOR) $(TEMPFLE) > $@
 
 states: graphite_band.out
 
@@ -85,18 +86,21 @@ $(DOPED_CELLS_DIR)/%/formation_energy.abinit.json: $(DOPED_CELLS_DIR)/%/doped_ce
 # dopings
 $(DOPED_CELLS_DIR)/%_triangular/doped_cell.abinit.json: $(PURE_CELLS_DIR)/%.abinit.json $(DOPING_PATTERN_DIR)/triangular.abinit.json
 	$(dir_guard)
-	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR) > $@
+	python $(PATH_TO_ABINIT_JSON_MERGER) $^ > $(TEMPFILE)
+	python $(PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR) $(TEMPFILE) > $@
 
 $(DOPED_CELLS_DIR)/%_honeycomb/doped_cell.abinit.json: $(PURE_CELLS_DIR)/%.abinit.json $(DOPING_PATTERN_DIR)/honeycomb.abinit.json
 	$(dir_guard)
-	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR) > $@
+	python $(PATH_TO_ABINIT_JSON_MERGER) $^ > $(TEMPFILE)
+	python $(PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR) $(TEMPFILE) > $@
 
 
 # 2-D repetitions of unit cell
 # This is important because chiral atom positions are inaccurate, and may drop ones near axes
 $(PURE_CELLS_DIR)/hexBN_%,0.abinit.json: $(PURE_CELLS_DIR)/hexBN_1,0.abinit.json $(CELL_REPETION_DIR)/xy_%x.abinit.json
 	$(dir_guard)
-	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR) > $@
+	python $(PATH_TO_ABINIT_JSON_MERGER) $^ > $(TEMPFILE)
+	python $(PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR) $(TEMPFILE) > $@
 
 # 2-D chiral tesselation of unit cell
 $(PURE_CELLS_DIR)/hexBN_%.abinit.json: $(PURE_CELLS_DIR)/hexBN_1,0.abinit.json $(CHIRALITY_PATTERN_DIR)/%.abinit.json
