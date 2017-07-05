@@ -96,7 +96,7 @@ $(PURE_CELLS_DIR)/hexBN_%,0.abinit.json: $(PURE_CELLS_DIR)/hexBN_1,0.abinit.json
 	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR) > $@
 
 $(CELL_REPETION_DIR)/xy_%x.abinit.json:
-	# $(dir_guard)
+	$(dir_guard)
 	echo "{ \"meta\": {\"repeat_cell\": [ $(*), $(*), 1 ] } }" > $@
 
 %.out: %.files %.in  #runs the test iff tbase%_x.out is older than tbase%_x.in or missing

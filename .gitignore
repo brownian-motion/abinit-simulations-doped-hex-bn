@@ -8,3 +8,4 @@ log
 *.json
 !*.abinit.json
 *.xsf
+cell_repetition_patterns/
