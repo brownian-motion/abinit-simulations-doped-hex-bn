@@ -99,8 +99,8 @@ $(CELL_REPETION_DIR)/xy_%x.abinit.json:
 	$(dir_guard)
 	echo "{ \"meta\": {\"repeat_cell\": [ $(*), $(*), 1 ] } }" > $@
 
-%.out: %.files %.in  #runs the test iff tbase%_x.out is older than tbase%_x.in or missing
-	$(ABINIT_MAIN_DIR_PATH)/abinit < $< $(LOG_OUTPUT_OPERATOR) $(LOG_FILE)
+%.out: %.in %.files  #runs the test iff tbase%_x.out is older than tbase%_x.in or missing
+	$(ABINIT_MAIN_DIR_PATH)/abinit < $(*).files $(LOG_OUTPUT_OPERATOR) $(LOG_FILE)
 	
 %.files:
 	echo $*.in > $@
