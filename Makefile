@@ -50,6 +50,8 @@ PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/repeat_atoms_
 PATH_TO_ABINIT_JSON_MERGER?=$(DEFAULT_TOOLS_PATH)/merge.py
 PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/dope_cell.py
 PATH_TO_ABINIT_JSON_CHIRAL_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/generate_2D_chiral_cell.py
+PATH_TO_ABINIT_RHOMBUS_CELL_DISPLAY?=$(DEFAULT_TOOLS_PATH)/visualize_rhombus_cell.py
+PATH_TO_ABINIT_SQUARE_CELL_DISPLAY?=$(DEFAULT_TOOLS_PATH)/visualize_square_cell.py
 
 TEMPFILE:=$(shell mktemp)
 
@@ -174,6 +176,15 @@ $(CHIRALITY_PATTERN_DIR)/%.abinit.json:
 analysis/formation_energy.txt: # $(wildcard doped_cells/*/formation_energy.out)
 	$(dir_guard)
 	grep 'etotal ' doped_cells/*/formation_energy.out > $@
+
+### VIEW CELLS
+
+preview/rhombus/%: pure_cells/%.abinit.json
+	python $(PATH_TO_ABINIT_RHOMBUS_CELL_DISPLAY) $^
+
+
+preview/square/%: pure_cells/%.abinit.json
+	python $(PATH_TO_ABINIT_SQUARE_CELL_DISPLAY) $^
 
 ### CLEANING
 
