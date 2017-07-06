@@ -61,23 +61,11 @@ DOPING_PATTERN_DIR:=doping_patterns
 CHIRALITY_PATTERN_DIR:=chiral_cell_patterns
 
 
-# default recipe. Will change frequently
-all: geom
-
 # Optimize the geometry to get the best value for acell
 geom: hexBN_geom.out
 
-# Make a .json file describing the band energy, to view with a plotting tool like Mathematica or MATLAB
-band: hexBN_analysis.out hexBN_analysis_out.generic_DS2_band_eigen_energy.json hexBN_analysis.out hexBN_analysis_out.generic_DS2_band_eigen_energy.svg
 
-# Make an .xsf file for the charge density of the lattice, to view in XCrysDen or VESTA
-charge: hexBN_analysis.out hexBN_analysis_out.generic_DS1.xsf
-
-%.in: %.abinit.json
-	python $(PATH_TO_ABINIT_JSON_ATOM_GENERATOR) $^ > $(TEMPFILE)
-	python $(PATH_TO_ABINIT_INPUT_FILE_GENERATOR) $(TEMPFILE) > $@
-
-states: graphite_band.out
+### DOPING CELLS
 
 $(DOPED_CELLS_DIR)/%/formation_energy.abinit.json: $(DOPED_CELLS_DIR)/%/doped_cell.abinit.json $(EXPERIMENT_TEMPLATE_DIR)/formation_energy.abinit.json
 	$(dir_guard)
@@ -94,14 +82,13 @@ $(DOPED_CELLS_DIR)/%_honeycomb/doped_cell.abinit.json: $(PURE_CELLS_DIR)/%.abini
 	python $(PATH_TO_ABINIT_JSON_MERGER) $^ > $(TEMPFILE)
 	python $(PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR) $(TEMPFILE) > $@
 
-
+### MAKING LARGER UNIT CELLS
 # 2-D repetitions of unit cell, with boron at origin
 # This is important because chiral atom positions are inaccurate, and may drop atoms near axes
 $(PURE_CELLS_DIR)/hexBN_%,0.abinit.json: $(PURE_CELLS_DIR)/hexBN_1,0.abinit.json $(CELL_REPETION_DIR)/xy_%x.abinit.json
 	$(dir_guard)
 	python $(PATH_TO_ABINIT_JSON_MERGER) $^ > $(TEMPFILE)
 	python $(PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR) $(TEMPFILE) > $@
-
 
 # 2-D repetitions of unit cell, with nitrogen at origin
 # This is important because chiral atom positions are inaccurate, and may drop atoms near axes
@@ -110,18 +97,32 @@ $(PURE_CELLS_DIR)/hexNB_%,0.abinit.json: $(PURE_CELLS_DIR)/hexNB_1,0.abinit.json
 	python $(PATH_TO_ABINIT_JSON_MERGER) $^ > $(TEMPFILE)
 	python $(PATH_TO_ABINIT_JSON_REPEATED_CELL_GENERATOR) $(TEMPFILE) > $@
 
-# 2-D chiral tesselation of unit cell
+# 2-D chiral tesselation of unit cell, with boron at origin
 $(PURE_CELLS_DIR)/hexBN_%.abinit.json: $(PURE_CELLS_DIR)/hexBN_1,0.abinit.json $(CHIRALITY_PATTERN_DIR)/%.abinit.json
 	$(dir_guard)
-	python $(PATH_TO_ABINIT_JSON_MERGER) $^ | python $(PATH_TO_ABINIT_JSON_CHIRAL_CELL_GENERATOR) > $@
+	python $(PATH_TO_ABINIT_JSON_MERGER) $^ > $(TEMPFILE)
+	python $(PATH_TO_ABINIT_JSON_CHIRAL_CELL_GENERATOR) $(TEMPFILE) > $@
+
+# 2-D chiral tesselation of unit cell, with nitrogen at origin
+$(PURE_CELLS_DIR)/hexNB_%.abinit.json: $(PURE_CELLS_DIR)/hexNB_1,0.abinit.json $(CHIRALITY_PATTERN_DIR)/%.abinit.json
+	$(dir_guard)
+	python $(PATH_TO_ABINIT_JSON_MERGER) $^ > $(TEMPFILE)
+	python $(PATH_TO_ABINIT_JSON_CHIRAL_CELL_GENERATOR) $(TEMPFILE) > $@
 
 $(CELL_REPETION_DIR)/xy_%x.abinit.json:
 	$(dir_guard)
 	echo "{ \"meta\": {\"repeat_cell\": [ $(*), $(*), 1 ] } }" > $@
 
+# NOTE: these patterns should be comma-seperated
 $(CHIRALITY_PATTERN_DIR)/%.abinit.json:
 	$(dir_guard)
 	echo "{ \"meta\": {\"make_chirality\": [ $(*) ] } }" > $@
+
+### PERFORMING CALCULATIONS
+
+%.in: %.abinit.json
+	python $(PATH_TO_ABINIT_JSON_ATOM_GENERATOR) $^ > $(TEMPFILE)
+	python $(PATH_TO_ABINIT_INPUT_FILE_GENERATOR) $(TEMPFILE) > $@
 
 %.out: %.in %.files  #runs the test iff %.out is older than %.in or missing
 	$(ABINIT_MAIN_DIR_PATH)/abinit < $(*).files $(LOG_OUTPUT_OPERATOR) $(@D)/$(LOG_FILE)
@@ -135,6 +136,8 @@ $(CHIRALITY_PATTERN_DIR)/%.abinit.json:
 	echo $(BORON_PSEUDO) >> $@
 	echo $(CARBON_PSEUDO) >> $@
 	echo $(NITROGEN_PSEUDO) >> $@
+
+### ANALYSING RESULTS
 
 %_band_eigen_energy.json: %_EIG
 	python $(PATH_TO_EIG_PARSER) $^ > $@
@@ -156,7 +159,7 @@ $(CHIRALITY_PATTERN_DIR)/%.abinit.json:
 %_3d_indexed.csv: %_3d_indexed.dat
 	java -jar $(PATH_TO_DEN_PARSER) -in $< -out $@
 
-# For use with files like XCrysDen or VESTA
+# To view the charge density with files like XCrysDen or VESTA
 %.xsf: %_DEN
 	# cut3d only reads instructions from stdin, not arguments
 	# Make only can handle single lines of text
@@ -171,6 +174,8 @@ $(CHIRALITY_PATTERN_DIR)/%.abinit.json:
 analysis/formation_energy.txt: # $(wildcard doped_cells/*/formation_energy.out)
 	$(dir_guard)
 	grep 'etotal ' doped_cells/*/formation_energy.out > $@
+
+### CLEANING
 
 clean: cleanLog cleanTemp cleanOutput
 
