@@ -12,3 +12,4 @@ cell_repetition_patterns/
 doped_cells/
 pure_cells/
 analysis/
+test*
