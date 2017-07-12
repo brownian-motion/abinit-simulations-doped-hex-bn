@@ -52,6 +52,12 @@ PATH_TO_ABINIT_JSON_DOPED_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/dope_cell.py
 PATH_TO_ABINIT_JSON_CHIRAL_CELL_GENERATOR?=$(DEFAULT_TOOLS_PATH)/generate_2D_chiral_cell.py
 PATH_TO_ABINIT_RHOMBUS_CELL_DISPLAY?=$(DEFAULT_TOOLS_PATH)/visualize_rhombus_cell.py
 PATH_TO_ABINIT_SQUARE_CELL_DISPLAY?=$(DEFAULT_TOOLS_PATH)/visualize_square_cell.py
+PATH_TO_XYZ_GENERATOR?=$(DEFAULT_TOOLS_PATH)/generate_cell_xyz.py
+PATH_TO_CIF_GENERATOR?=$(DEFAULT_TOOLS_PATH)/generate_cell_cif.py
+
+# Setting up paths to VESTA
+VESTA_DIR_PATH?=~/bin/VESTA-x86_64
+VESTA_EXE_PATH?=$(VESTA_DIR_PATH)/VESTA
 
 TEMPFILE:=$(shell mktemp)
 
@@ -185,6 +191,15 @@ preview/rhombus/%: pure_cells/%.abinit.json
 
 preview/square/%: pure_cells/%.abinit.json
 	python $(PATH_TO_ABINIT_SQUARE_CELL_DISPLAY) $^
+
+preview/vesta/%: %
+	$(VESTA_EXE_PATH) $^
+
+%.xyz: %.abinit.json
+	python $(PATH_TO_XYZ_GENERATOR) $^ > $@
+
+%.cif: %.abinit.json
+	python $(PATH_TO_CIF_GENERATOR) $^ > $@
 
 ### CLEANING
 
